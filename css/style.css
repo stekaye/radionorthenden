@@ -1,0 +1,254 @@
+:root {
+  --color-primary: #8ec6c5;
+  --color-secondary: #6983aa;
+  --color-tertiary: #8566aa;
+  --color-grey-light-1: #faf9f9;
+  --color-grey-light-2: #f4f2f2;
+  --color-grey-light-3: #f0eeee;
+  --color-grey-light-4: #ccc;
+  --color-grey-dark-1: #333;
+  --color-grey-dark-2: #777;
+  --color-grey-dark-3: #999;
+  --color-white-1: #fff;
+  --color-white-2: #f4f4f4;
+  --font-jo: 'Josefin Sans', sans-serif;
+  --font-mo: 'Montserrat', sans-serif; }
+
+* {
+  margin: 0;
+  padding: 0; }
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit; }
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; }
+
+body {
+  background-color: var(--color-white-2);
+  color: var(--color-white-2);
+  font-family: var(--font-mo);
+  font-weight: 400;
+  line-height: 1.6;
+  padding: 30px; }
+
+.heading-primary {
+  backface-visibility: hidden;
+  margin-bottom: 5rem;
+  text-transform: uppercase; }
+  .heading-primary--main {
+    animation: moveInLeft 1s ease-out;
+    display: block;
+    font-family: var(--font-mo);
+    font-size: 6rem;
+    font-weight: 700;
+    letter-spacing: 2rem;
+    margin-bottom: 2rem; }
+  .heading-primary--sub {
+    animation: moveInRight 1s ease-out;
+    display: block;
+    font-family: var(--font-mo);
+    font-size: 1.7rem;
+    font-weight: 600;
+    letter-spacing: 0.5rem;
+    line-height: 2; }
+
+.btn, .btn:link, .btn:visited {
+  border-radius: 10rem;
+  display: inline-block;
+  margin: 0 2rem;
+  padding: 1.5rem 4rem;
+  position: relative;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: all .2s;
+  border: none; }
+
+.btn:hover {
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  transform: translateY(-3px); }
+  .btn:hover::after {
+    opacity: 0;
+    transform: scaleX(1.4) scaleY(1.6); }
+
+.btn:active, .btn:focus {
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+  outline: none;
+  transform: translateY(-1px); }
+
+.btn::after {
+  border-radius: 10rem;
+  content: "";
+  display: inline-block;
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  transition: all .4s;
+  width: 100%;
+  z-index: -1; }
+
+.btn--donate {
+  cursor: url("../../img/heart.png"), auto; }
+
+.btn--listen {
+  cursor: url("../../img/music.png"), auto; }
+
+.btn--blue {
+  background-color: var(--color-secondary);
+  color: var(--color-white-2); }
+  .btn--blue::after {
+    background-color: var(--color-secondary); }
+
+.btn--animated {
+  animation: moveInBottom .5s ease-out .75s;
+  animation-fill-mode: backwards; }
+
+.btn--text {
+  font-size: 1.5rem; }
+
+.listen-live__section {
+  padding: 3rem 0; }
+  .listen-live__section--player {
+    height: 18rem;
+    margin: 0 0; }
+  .listen-live__section--link {
+    color: var(--color-secondary);
+    cursor: url("../../img/music.png"), auto;
+    display: block;
+    font-size: 3rem;
+    text-align: center;
+    text-decoration: none; }
+
+.header {
+  background-image: linear-gradient(to right bottom, rgba(142, 198, 197, 0.7), rgba(105, 131, 170, 0.7)), url(../../img/hero_1.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 92vh;
+  position: relative; }
+  .header__text-box {
+    left: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center; }
+  .header__logo-box {
+    left: 88%;
+    position: absolute;
+    top: 32%;
+    z-index: 2; }
+  .header__logo {
+    height: 6rem; }
+
+.navigation__checkbox {
+  display: none; }
+
+.navigation__button {
+  background-color: var(--color-white-2);
+  border-radius: 50%;
+  box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  height: 7rem;
+  position: fixed;
+  right: 6rem;
+  text-align: center;
+  top: 6rem;
+  width: 7rem;
+  z-index: 2000; }
+
+.navigation__background {
+  background-image: linear-gradient(to right bottom, #8ec6c5, #6983aa);
+  border-radius: 50%;
+  height: 6rem;
+  position: fixed;
+  right: 6.5rem;
+  top: 6.5rem;
+  transition: transform 0.8s cubic-bezier(0.83, 0, 0.17, 1);
+  width: 6rem;
+  z-index: 1000; }
+
+.navigation__nav {
+  height: 100vh;
+  opacity: 0;
+  position: fixed;
+  left: 0;
+  top: 0;
+  transition: all 0.8s cubic-bezier(0.68, -0.6, 0.32, 1.6);
+  width: 0;
+  z-index: 1500; }
+
+.navigation__list {
+  left: 50%;
+  list-style: none;
+  position: absolute;
+  text-align: center;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%; }
+
+.navigation__item {
+  margin: 1rem; }
+
+.navigation__link:link, .navigation__link:visited {
+  background-image: linear-gradient(120deg, transparent 0%, transparent 50%, var(--color-white-2) 50%);
+  background-size: 220%;
+  color: var(--color-white-2);
+  display: inline-block;
+  font-size: 3rem;
+  font-weight: 300;
+  padding: 1rem 2rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: all .4s; }
+  .navigation__link:link span, .navigation__link:visited span {
+    margin-right: 1.5rem; }
+
+.navigation__link:active, .navigation__link:hover {
+  background-position: 100%;
+  color: var(--color-secondary);
+  transform: translateX(1rem); }
+
+.navigation__checkbox:checked ~ .navigation__nav {
+  opacity: 1;
+  width: 100%; }
+
+.navigation__checkbox:checked ~ .navigation__background {
+  transform: scale(80); }
+
+.navigation__icon {
+  position: relative;
+  margin-top: 3.5rem; }
+  .navigation__icon, .navigation__icon::before, .navigation__icon::after {
+    background-color: var(--color-grey-dark-2);
+    display: inline-block;
+    height: 2px;
+    width: 3rem; }
+  .navigation__icon::before, .navigation__icon::after {
+    content: "";
+    left: 0;
+    position: absolute;
+    transition: all .2s; }
+  .navigation__icon::before {
+    top: -0.8rem; }
+  .navigation__icon::after {
+    top: 0.8rem; }
+
+.navigation__button:hover .navigation__icon::before {
+  top: -1rem; }
+
+.navigation__button:hover .navigation__icon::after {
+  top: 1rem; }
+
+.navigation__checkbox:checked + .navigation__button .navigation__icon {
+  background-color: transparent; }
+
+.navigation__checkbox:checked + .navigation__button .navigation__icon::before {
+  top: 0;
+  transform: rotate(135deg); }
+
+.navigation__checkbox:checked + .navigation__button .navigation__icon::after {
+  top: 0;
+  transform: rotate(-135deg); }

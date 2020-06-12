@@ -1,0 +1,21 @@
+.listen-live__section {
+
+  padding: 3rem 0;
+
+  &--player {
+    height: 18rem;
+    margin: 0 0;
+  }
+
+  &--link {
+    color: var(--color-secondary);
+    cursor: url("../../img/music.png"), auto;
+    display: block;
+    font-size: 3rem;
+    text-align: center;
+    text-decoration: none;
+  }
+}
+
+
+

@@ -1,0 +1,26 @@
+.heading-primary {
+  backface-visibility: hidden;
+  margin-bottom: 5rem;
+  text-transform: uppercase;
+
+  &--main {
+    animation: moveInLeft 1s ease-out;
+    display: block;
+    font-family: var(--font-mo);
+    font-size: 6rem;
+    font-weight: 700;
+    letter-spacing: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  &--sub {
+    animation: moveInRight 1s ease-out;
+    display: block;
+    font-family: var(--font-mo);
+    font-size: 1.7rem;
+    font-weight: 600;
+    letter-spacing: 0.5rem;
+    line-height: 2;
+  }
+
+}
