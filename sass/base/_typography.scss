@@ -11,6 +11,7 @@
     font-weight: 700;
     letter-spacing: 2rem;
     margin-bottom: 2rem;
+    position: relative;
   }
 
   &--sub {
@@ -23,4 +24,14 @@
     line-height: 2;
   }
 
+}
+
+.section-heading {
+  color: var(--color-secondary);
+  display: block;
+  font-family: var(--font-jo);
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  text-align: center;
+  text-transform: uppercase;
 }

@@ -1,10 +1,22 @@
 .listen-live__section {
 
+  height: 40rem;
   padding: 3rem 0;
+  position: relative;
+
+  &--wrapper {
+    left: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
 
   &--player {
+    border: 2px solid var(--color-secondary);
     height: 18rem;
-    margin: 0 0;
+    margin: 4rem 2rem;
+    padding: 1rem;
+    width: 70vw;
   }
 
   &--link {
@@ -15,6 +27,7 @@
     text-align: center;
     text-decoration: none;
   }
+
 }
 
 
