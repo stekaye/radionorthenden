@@ -1,2 +1,131 @@
 /* CONTACT FORM STYLES */
 
+.contact-section {
+   background-image: linear-gradient(to right bottom, 
+    rgba(#6983aa, 0.8), 
+    rgba(#015668, 0.8)),
+    url(/img/northenden_map.png);
+  background-size: cover;
+  height: 94vh;
+  margin: 10rem 0 0;
+  position: relative;
+
+  &__heading {
+    color: var(--color-white-1);
+    display: block;
+    font-family: var(--font-jo);
+    font-size: 2rem;
+    margin-bottom: 4rem;
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  &__form {
+    background: var(--color-grey-light-3);
+    border-radius: 8px;
+    box-shadow: 0 0 4rem -1rem #000;
+    font-family: var(--font-mo), sans-serif;
+    height: 44rem;
+    left: 50%;
+    // margin: calc(50vh - 22rem) auto;
+    // max-width: calc(100vw - 4rem);
+    padding: 2rem 3rem;
+    position: absolute;
+    top: 55%;
+    transform: translate(-50%, -50%);
+    width: 34rem;
+
+    & input {
+      width: 100%;
+      padding: 1rem;
+      box-sizing: border-box;
+      background: none;
+      outline: none;
+      resize: none;
+      border: 0;
+      font-family: var(--font-mo), sans-serif;
+      transition: all .3s;
+      border-bottom: 2px solid #bebed2;
+
+      &:focus {
+        border-bottom: 2px solid var(--color-secondary);
+      }
+    }
+
+    & p:before {
+      content: attr(type);
+      display: block;
+      margin: 2.8rem 0 0;
+      font-size: 1.5rem;
+      color: var(--color-secondary);
+    }
+
+    & button {
+      color: var(--color-secondary);
+      float: right;
+      padding: 1rem 1.2rem;
+      margin: 1.5rem 0 0;
+      font-family: var(--font-mo), sans-serif;
+      border: 2px solid var(--color-secondary);
+      background: 0;
+      cursor: pointer;
+      transition: all .3s
+    }
+
+    & button:hover {
+      background: var(--color-secondary);
+      color: var(--color-white-1);
+    }
+
+    & div {
+      content:'Hi';
+      position: absolute;
+      bottom: -1.5rem;
+      right: -2rem;
+      background : var(--color-secondary);
+      color: var(--color-white-1);
+      width: 34rem;
+      padding: 1.6rem .4rem 1.6rem 0;
+      border-radius: .6rem;
+      font-size: 1.3rem;
+      box-shadow: 1rem 1rem 4rem -1.4rem #000
+    }
+
+    & a {
+      color: var(--color-white-1);
+      text-decoration: none;
+
+      &:hover {
+        color: var(--color-orange);
+
+        & span {
+          color: var(--color-white-1);
+          border-bottom: 2px solid var(--color-orange);
+        }
+      }
+
+    }
+
+    & i {
+      margin: 0 0.5rem 0 1.5rem;
+      transition: .8s;
+
+      &:hover {
+        transform: rotateY(360deg);
+      }
+    }
+
+    & span:hover {
+      color: var(--color-white-1);
+      border-bottom: 2px solid var(--color-orange);
+    }
+  }
+
+  &__text-box {
+        border-bottom: 3px solid var(--color-secondary);
+        color: var(--color-secondary);
+        margin: 1rem 0;
+        padding-bottom: 1rem;
+        width: 18rem;
+      }
+}

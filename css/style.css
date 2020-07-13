@@ -59,6 +59,24 @@ body {
     letter-spacing: 0.5rem;
     line-height: 2; }
 
+.footer-primary {
+  backface-visibility: hidden;
+  text-transform: uppercase; }
+  .footer-primary--main {
+    display: block;
+    font-family: var(--font-mo);
+    font-size: 4rem;
+    font-weight: 700;
+    letter-spacing: 1rem;
+    position: relative; }
+  .footer-primary--sub {
+    display: block;
+    font-family: var(--font-mo);
+    font-size: 1.4rem;
+    font-weight: 600;
+    letter-spacing: 0.3rem;
+    line-height: 2; }
+
 .section-heading {
   color: var(--color-secondary);
   display: block;
@@ -67,6 +85,46 @@ body {
   margin-bottom: 2rem;
   text-align: center;
   text-transform: uppercase; }
+
+.footer__button, .footer__button:link, .footer__button:visited {
+  background: transparent;
+  border: none;
+  color: var(--color-secondary);
+  cursor: pointer;
+  display: inline-block;
+  font-size: 1.5rem;
+  font-weight: 300;
+  margin: 3rem 1.5rem;
+  outline: none;
+  padding: 10px;
+  position: relative;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: all .3s; }
+
+.footer__button:before {
+  content: "";
+  border-bottom: 2px solid var(--color-secondary);
+  padding: 0 0;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  width: 0;
+  transition: 0.3s; }
+
+.footer__button:hover:before {
+  width: 90%;
+  padding: 0; }
+
+.footer__button:active {
+  background: black;
+  color: white;
+  transition: none; }
+
+.footer__button--live {
+  font-weight: 500; }
 
 .btn, .btn:link, .btn:visited {
   border: none;
@@ -147,6 +205,99 @@ body {
     text-decoration: none; }
 
 /* CONTACT FORM STYLES */
+.contact-section {
+  background-image: linear-gradient(to right bottom, rgba(105, 131, 170, 0.8), rgba(1, 86, 104, 0.8)), url(/img/northenden_map.png);
+  background-size: cover;
+  height: 94vh;
+  margin: 10rem 0 0;
+  position: relative; }
+  .contact-section__heading {
+    color: var(--color-white-1);
+    display: block;
+    font-family: var(--font-jo);
+    font-size: 2rem;
+    margin-bottom: 4rem;
+    text-align: center;
+    text-transform: uppercase; }
+  .contact-section__form {
+    background: var(--color-grey-light-3);
+    border-radius: 8px;
+    box-shadow: 0 0 4rem -1rem #000;
+    font-family: var(--font-mo), sans-serif;
+    height: 44rem;
+    left: 50%;
+    padding: 2rem 3rem;
+    position: absolute;
+    top: 55%;
+    transform: translate(-50%, -50%);
+    width: 34rem; }
+    .contact-section__form input {
+      width: 100%;
+      padding: 1rem;
+      box-sizing: border-box;
+      background: none;
+      outline: none;
+      resize: none;
+      border: 0;
+      font-family: var(--font-mo), sans-serif;
+      transition: all .3s;
+      border-bottom: 2px solid #bebed2; }
+      .contact-section__form input:focus {
+        border-bottom: 2px solid var(--color-secondary); }
+    .contact-section__form p:before {
+      content: attr(type);
+      display: block;
+      margin: 2.8rem 0 0;
+      font-size: 1.5rem;
+      color: var(--color-secondary); }
+    .contact-section__form button {
+      color: var(--color-secondary);
+      float: right;
+      padding: 1rem 1.2rem;
+      margin: 1.5rem 0 0;
+      font-family: var(--font-mo), sans-serif;
+      border: 2px solid var(--color-secondary);
+      background: 0;
+      cursor: pointer;
+      transition: all .3s; }
+    .contact-section__form button:hover {
+      background: var(--color-secondary);
+      color: var(--color-white-1); }
+    .contact-section__form div {
+      content: 'Hi';
+      position: absolute;
+      bottom: -1.5rem;
+      right: -2rem;
+      background: var(--color-secondary);
+      color: var(--color-white-1);
+      width: 34rem;
+      padding: 1.6rem .4rem 1.6rem 0;
+      border-radius: .6rem;
+      font-size: 1.3rem;
+      box-shadow: 1rem 1rem 4rem -1.4rem #000; }
+    .contact-section__form a {
+      color: var(--color-white-1);
+      text-decoration: none; }
+      .contact-section__form a:hover {
+        color: var(--color-orange); }
+        .contact-section__form a:hover span {
+          color: var(--color-white-1);
+          border-bottom: 2px solid var(--color-orange); }
+    .contact-section__form i {
+      margin: 0 0.5rem 0 1.5rem;
+      transition: .8s; }
+      .contact-section__form i:hover {
+        transform: rotateY(360deg); }
+    .contact-section__form span:hover {
+      color: var(--color-white-1);
+      border-bottom: 2px solid var(--color-orange); }
+  .contact-section__text-box {
+    border-bottom: 3px solid var(--color-secondary);
+    color: var(--color-secondary);
+    margin: 1rem 0;
+    padding-bottom: 1rem;
+    width: 18rem; }
+
 /* ============= Begin Testimonial Flexbox ============ */
 #flex-container {
   display: -webkit-box;
@@ -598,6 +749,80 @@ label:first-letter {
   .social-icons li a:hover .fab {
     color: var(--color-grey-light-1); }
 
+.footer {
+  background-color: var(--color-grey-light-3);
+  height: 45vh;
+  position: relative; }
+  .footer__text-box {
+    color: var(--color-secondary);
+    left: 50%;
+    margin: 3rem 0;
+    position: absolute;
+    text-align: center;
+    top: 15%;
+    transform: translate(-50%, -50%);
+    width: 100%; }
+  .footer__buttons {
+    left: 50%;
+    margin: 2rem 0;
+    position: absolute;
+    top: 120%;
+    transform: translate(-50%, -50%);
+    width: 100%; }
+  .footer__logo-box {
+    left: 37%;
+    position: absolute;
+    top: 62%;
+    transform: translate(-50%, -50%);
+    z-index: 2; }
+  .footer__logo-home {
+    position: relative; }
+  .footer__logo {
+    height: 6rem; }
+  .footer__social-icons {
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex; }
+    .footer__social-icons li {
+      list-style: none; }
+      .footer__social-icons li a {
+        background-color: var(--color-secondary);
+        border-radius: 50%;
+        position: relative;
+        display: block;
+        width: 4.5rem;
+        height: 4.5rem;
+        line-height: 50px;
+        text-align: center;
+        font-size: 1.8rem;
+        color: #fff;
+        font-weight: bold;
+        margin: 0 1rem;
+        opacity: 0.8; }
+        .footer__social-icons li a:hover {
+          background-color: var(--color-secondary);
+          opacity: 1; }
+        .footer__social-icons li a .fab {
+          position: absolute;
+          left: 50%;
+          top: 50%;
+          transform: translate(-50%, -50%);
+          transition: .8s; }
+          .footer__social-icons li a .fab:hover {
+            color: #fff; }
+  .footer__copyright {
+    color: var(--color-secondary);
+    font-family: var(--font-mo);
+    font-size: 1.2rem;
+    font-weight: 100;
+    left: 50%;
+    margin: 2rem 0 0;
+    position: absolute;
+    top: 80%;
+    transform: translate(-50%, -50%); }
+
 .navigation__checkbox {
   display: none; }
 
@@ -633,7 +858,7 @@ label:first-letter {
   top: 0;
   transition: all 0.8s cubic-bezier(0.68, -0.6, 0.32, 1.6);
   width: 0;
-  z-index: 1500; }
+  z-index: -1500; }
 
 .navigation__list {
   left: 50%;
@@ -668,7 +893,8 @@ label:first-letter {
 
 .navigation__checkbox:checked ~ .navigation__nav {
   opacity: 1;
-  width: 100%; }
+  width: 100%;
+  z-index: 1500; }
 
 .navigation__checkbox:checked ~ .navigation__background {
   transform: scale(80); }
@@ -774,7 +1000,8 @@ label:first-letter {
     width: 100%;
     z-index: -1; }
     .card .card-image__sanny {
-      background-image: url(/img/sanny_transparent.png); }
+      background-image: url(/img/sanny_transparent.png);
+      width: 100%; }
     .card .card-image__katie {
       background-image: url(/img/katie_transparent.png); }
     .card .card-image__kevin {
@@ -874,7 +1101,7 @@ label:first-letter {
       font-weight: 200; }
 
 .media-section {
-  margin: 6rem 8rem; }
+  margin: 10rem 8rem; }
   .media-section__container {
     align-items: top;
     display: flex;

@@ -1,3 +1,55 @@
+.footer__button {
+
+  &, //includes button element (which is not a link)
+  &:link,
+  &:visited {
+    background: transparent;
+    border: none;
+    color: var(--color-secondary);
+    cursor: pointer;
+    display: inline-block;
+    font-size: 1.5rem;
+    font-weight: 300;
+    margin: 3rem 1.5rem;
+    outline: none;
+    padding: 10px;
+    position: relative;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: all .3s;
+  }
+
+  &:before {
+    content: "";
+    border-bottom: 2px solid var(--color-secondary);
+    padding: 0 0;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    width: 0;
+    transition: 0.3s;
+  }
+
+  &:hover:before {
+    width: 90%;
+    padding: 0; // the other part of the trick
+  }
+
+  &:active {
+    background: black;
+    color: white;
+    transition: none;
+  }
+
+  &--live {
+    font-weight: 500;
+  }
+  
+} 
+
+
 
 .btn {
   &, //includes button element (which is not a link)

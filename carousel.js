@@ -28,7 +28,7 @@ function cycleTestimonials(index) {
     document.querySelector(".testimonials").addEventListener("click", function() {
       clearTimeout(timer); //stop the carousel when someone clicks on the div
     });
-  }, 5000); //adjust scroll speed in miliseconds
+  }, 7000); //adjust scroll speed in miliseconds
 }
 //run the function
 cycleTestimonials(0);

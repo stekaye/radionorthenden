@@ -26,6 +26,30 @@
 
 }
 
+.footer-primary {
+  backface-visibility: hidden;
+  text-transform: uppercase;
+
+  &--main {
+    display: block;
+    font-family: var(--font-mo);
+    font-size: 4rem;
+    font-weight: 700;
+    letter-spacing: 1rem;
+    position: relative;
+  }
+
+  &--sub {
+    display: block;
+    font-family: var(--font-mo);
+    font-size: 1.4rem;
+    font-weight: 600;
+    letter-spacing: 0.3rem;
+    line-height: 2;
+  }
+
+}
+
 .section-heading {
   color: var(--color-secondary);
   display: block;

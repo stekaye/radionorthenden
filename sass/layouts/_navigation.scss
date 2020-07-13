@@ -40,7 +40,7 @@
     top: 0;
     transition: all .8s cubic-bezier(0.68, -0.6, 0.32, 1.6);
     width: 0;
-    z-index: 1500;
+    z-index: -1500;
   }
 
   &__list {
@@ -90,6 +90,7 @@
   &__checkbox:checked ~ &__nav {
     opacity: 1;
     width: 100%;
+    z-index: 1500;
   }
 
   &__checkbox:checked ~ &__background {
