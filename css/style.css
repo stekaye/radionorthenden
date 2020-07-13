@@ -254,7 +254,7 @@ body {
     .contact-section__form button {
       color: var(--color-secondary);
       float: right;
-      padding: 0.1rem 1.2rem;
+      padding: 1rem 1.2rem;
       margin: 1.5rem 0 0;
       font-family: var(--font-mo), sans-serif;
       border: 2px solid var(--color-secondary);
