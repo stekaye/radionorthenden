@@ -1,7 +1,7 @@
 <?php
 
   if (isset($_POST['submit'])) {
-    $name = $_Post['name'];
+    $name = $_POST['name'];
     $mailFrom = $_POST['email'];
     $message = $_POST['message'];
     $subject = "New Message from Radion Northenden Website";
@@ -12,7 +12,7 @@
 
     mail($mailTo, $subject, $txt, $headers);
 
-    header("Location: index.php?mailsend");
+    echo "Thank You!";
   }
 
   ?>
