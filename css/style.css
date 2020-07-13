@@ -240,8 +240,9 @@ body {
       resize: none;
       border: 0;
       font-family: var(--font-mo), sans-serif;
-      transition: all .3s;
-      border-bottom: 2px solid #bebed2; }
+      transition: all .3s; }
+      .contact-section__form input:not(.submit) {
+        border-bottom: 2px solid #bebed2; }
       .contact-section__form input:focus {
         border-bottom: 2px solid var(--color-secondary); }
     .contact-section__form p:before {
@@ -253,7 +254,7 @@ body {
     .contact-section__form button {
       color: var(--color-secondary);
       float: right;
-      padding: 1rem 1.2rem;
+      padding: 0.5rem 1.2rem;
       margin: 1.5rem 0 0;
       font-family: var(--font-mo), sans-serif;
       border: 2px solid var(--color-secondary);
@@ -297,6 +298,12 @@ body {
     margin: 1rem 0;
     padding-bottom: 1rem;
     width: 18rem; }
+
+.submit {
+  color: var(--color-secondary);
+  font-family: var(--font-mo); }
+  .submit:hover {
+    color: var(--color-white-1); }
 
 /* ============= Begin Testimonial Flexbox ============ */
 #flex-container {

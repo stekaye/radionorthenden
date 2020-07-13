@@ -364,12 +364,12 @@
         <h1>Get in Touch</h1>
       </div>
 
-        <form class="contact-section__form">
+        <form class="contact-section__form" id="contact-form" method="post" action="contact-form-handler.php">
           <h2 class="contact-section__text-box">CONTACT US</h2>
-          <p type="Name:"><input placeholder="Write your name here.."></input></p>
-          <p type="Email:"><input placeholder="Let us know how to contact you back.."></input></p>
-          <p type="Message:"><input placeholder="What would you like to tell us.."></input></p>
-          <button>Send Message</button>
+          <p type="Name:"><input name="name" type="text" placeholder="Write your name here.." required></input></p>
+          <p type="Email:"><input name="email" type="email" placeholder="Let us know how to contact you back.." required></input></p>
+          <p type="Message:"><input name="message" type="text" placeholder="What would you like to tell us.." required></input></p>
+          <button><input class="submit" type="submit"></input></button>
           <div class="contact-section__media">
             
             <a href="https://twitter.com/radionorthenden?lang=en" target="_blank">
