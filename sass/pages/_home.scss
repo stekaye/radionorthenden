@@ -169,6 +169,16 @@
         width: 240px;
       }
     }
+
+    &__dan {
+      background-image: url(/img/dan_transp2.png);
+      left: 40%;
+    }
+
+    &__alex {
+      background-image: url(/img/alex_temp.png);
+      left: 35%;
+    }
   }
 }
 
@@ -281,6 +291,30 @@
     
   }
 
+  &__dan {
+    li {
+      a {
+        background:#4f8a8b;
+
+        @media only screen and (max-width: $bp-medium) {
+          background: #c06c84;
+        }
+      }
+    }
+  }
+
+  &__alex {
+    li {
+      a {
+        background:#fecb89;
+
+        @media only screen and (max-width: $bp-medium) {
+          background: #4f8a8b;
+        }
+      }
+    }
+  }
+
 }
 
 .card:hover .social-icons li a {
@@ -290,7 +324,7 @@
 }
 
 .social-icons__sanny li a:hover {
-  background: var(--color-orange);
+  background: #fecb89;
   transition: .1s;
   .fab {
     color: var(--color-grey-light-1);
@@ -313,7 +347,23 @@
   } 
 }
 .social-icons__emma li a:hover {
-  background: #fecb89;
+  background: var(--color-orange);
+  transition: .1s;
+  .fab {
+    color: var(--color-grey-light-1);
+  } 
+}
+
+.social-icons__dan li a:hover {
+  background: #c06c84;
+  transition: .1s;
+  .fab {
+    color: var(--color-grey-light-1);
+  } 
+}
+
+.social-icons__alex li a:hover {
+  background: #4f8a8b;
   transition: .1s;
   .fab {
     color: var(--color-grey-light-1);
@@ -354,6 +404,14 @@
 
   &__emma {
     background: #c06c84;
+  }
+
+  &__dan {
+    background: #4f8a8b;
+  }
+
+  &__alex {
+    background: #fecb89;
   }
 
   h2 {
