@@ -496,6 +496,47 @@ body {
     .item label {
       visibility: hidden; } }
 
+.mobile-input-section__list {
+  display: flex;
+  flex-direction: row;
+  list-style: none; }
+
+.mobile-input-section__item input {
+  border-right: none;
+  display: none; }
+  .mobile-input-section__item input:checked ~ label {
+    animation: none;
+    border-right: none; }
+
+@media only screen and (max-width: 56.25em) {
+  .mobile-input-section__item label {
+    display: none; } }
+
+@media only screen and (max-width: 37.5em) {
+  .mobile-input-section__item label {
+    background-color: var(--color-secondary);
+    border: 1px solid var(--color-secondary);
+    color: var(--color-white-1);
+    display: block;
+    font-family: var(--font-mo);
+    font-size: 1.1rem;
+    font-weight: 500;
+    text-align: center;
+    margin: .5rem .8rem 4rem;
+    opacity: 1;
+    padding: .5rem 1rem; } }
+
+@media only screen and (max-width: 25em) {
+  .mobile-input-section__item label {
+    font-size: 1rem;
+    margin: .5rem .5rem 4rem;
+    padding: .5rem .8rem; } }
+
+.mobile-input-section__item label:hover {
+  background-image: none;
+  font-size: 1rem;
+  transition: none; }
+
 .item label:hover {
   cursor: pointer;
   opacity: 1; }
@@ -737,27 +778,51 @@ label:before {
   background-size: cover;
   background-repeat: no-repeat;
   border-radius: 100%; }
+  @media only screen and (max-width: 37.5em) {
+    label:before {
+      visibility: hidden; } }
 
 .label_testimonial-1:before {
   background-image: url("/img/sanny_transparent.png"); }
+  @media only screen and (max-width: 37.5em) {
+    .label_testimonial-1:before {
+      visibility: hidden; } }
 
 .label_testimonial-2:before {
   background-image: url("/img/yoga.jpg"); }
+  @media only screen and (max-width: 37.5em) {
+    .label_testimonial-2:before {
+      visibility: hidden; } }
 
 .label_testimonial-3:before {
   background-image: url("/img/Katie.png"); }
+  @media only screen and (max-width: 37.5em) {
+    .label_testimonial-3:before {
+      visibility: hidden; } }
 
 .label_testimonial-4:before {
   background-image: url("/img/Kev.png"); }
+  @media only screen and (max-width: 37.5em) {
+    .label_testimonial-4:before {
+      visibility: hidden; } }
 
 .label_testimonial-5:before {
   background-image: url("/img/sanny_profile_1.JPG"); }
+  @media only screen and (max-width: 37.5em) {
+    .label_testimonial-5:before {
+      visibility: hidden; } }
 
 .label_testimonial-6:before {
   background-image: url("/img/breakfast.jpg"); }
+  @media only screen and (max-width: 37.5em) {
+    .label_testimonial-6:before {
+      visibility: hidden; } }
 
 label.label_testimonial-7:before {
   background-image: url("/img/stage.jpg"); }
+  @media only screen and (max-width: 37.5em) {
+    label.label_testimonial-7:before {
+      visibility: hidden; } }
 
 label:first-letter {
   text-transform: uppercase; }
