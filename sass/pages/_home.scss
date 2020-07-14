@@ -29,8 +29,7 @@
     opacity: 0.8;
 
     @media only screen and (max-width: $bp-medium) {
-      flex: 1;
-      height: 50vh;
+      flex: 1 1 50vh;
       margin: 0;
     }
   }
@@ -42,7 +41,7 @@
 
     @media only screen and (max-width: $bp-medium) {
       flex: 1;
-      padding: 2rem 0;
+      padding: 2rem;
     }
 
     &--paragraph {
@@ -104,8 +103,7 @@
   }
 
   @media only screen and (max-width: $bp-small) {
-    flex: 1;
-    height: 400px;
+    flex: 1 1 400px;
     overflow: hidden;
     width: 300px;
   }

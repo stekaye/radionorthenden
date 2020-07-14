@@ -1205,8 +1205,7 @@ label:first-letter {
     opacity: 0.8; }
     @media only screen and (max-width: 56.25em) {
       .about-section__image {
-        flex: 1;
-        height: 50vh;
+        flex: 1 1 50vh;
         margin: 0; } }
   .about-section__text-box {
     color: var(--color-secondary);
@@ -1215,7 +1214,7 @@ label:first-letter {
     @media only screen and (max-width: 56.25em) {
       .about-section__text-box {
         flex: 1;
-        padding: 2rem 0; } }
+        padding: 2rem; } }
     .about-section__text-box--paragraph {
       font-family: var(--font-mo);
       font-size: 1.7rem;
@@ -1263,8 +1262,7 @@ label:first-letter {
       width: 320px; } }
   @media only screen and (max-width: 37.5em) {
     .card-wrapper {
-      flex: 1;
-      height: 400px;
+      flex: 1 1 400px;
       overflow: hidden;
       width: 300px; } }
 
