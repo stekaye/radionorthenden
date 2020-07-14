@@ -1,12 +1,17 @@
 .footer {
   background-color: var(--color-grey-light-3);
-  height: 45vh;
+  height: 35rem;
   position: relative;
+  width: 100%;
+
+  @media only screen and (max-width: $bp-small) {
+    top-margin: 3rem;
+  }
 
   &__text-box {
     color: var(--color-secondary);
     left: 50%;
-    margin: 3rem 0;
+    margin: 3rem 0 0;
     position: absolute;
     text-align: center;
     top: 15%;
@@ -38,12 +43,20 @@
 
   &__logo {
     height: 6rem; 
+
+    @media only screen and (max-width: $bp-small) {
+      height: 4rem; 
+    }
+
+    @media only screen and (max-width: $bp-smallest) {
+      height: 3rem; 
+    }
   }
 
   &__social-icons {
 
     position: absolute;
-    top: 70%;
+    top: 220%;
     left: 50%;
     transform: translate(-50%, -50%);
     display: flex;
@@ -95,7 +108,16 @@
     left: 50%;
     margin: 2rem 0 0;
     position: absolute;
-    top: 80%;
+    top: 280%;
     transform: translate(-50%, -50%);
+
+    @media only screen and (max-width: $bp-small) {
+      font-size: 1rem;
+    }
+
+    @media only screen and (max-width: $bp-small) {
+      font-size: .7rem;
+      width: 100%;
+    }
   }
 }

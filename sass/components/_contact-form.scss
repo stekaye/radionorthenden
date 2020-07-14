@@ -10,6 +10,13 @@
   margin: 10rem 0 0;
   position: relative;
 
+  @media only screen and (max-width: $bp-small) {
+    margin: 0;
+    padding: 0;
+    width: 95vw;
+  }
+
+
   &__heading {
     color: var(--color-white-1);
     display: block;
@@ -18,6 +25,10 @@
     margin-bottom: 4rem;
     text-align: center;
     text-transform: uppercase;
+
+    @media only screen and (max-width: $bp-smallest) {
+      font-size: 1.5rem;
+    }
   }
 
   &__form {
@@ -34,6 +45,17 @@
     top: 55%;
     transform: translate(-50%, -50%);
     width: 34rem;
+
+    @media only screen and (max-width: $bp-small) {
+      width: 30rem;
+    }
+
+    @media only screen and (max-width: $bp-smallest) {
+      height: 34rem;
+      padding: 1rem 1.5rem;
+      top: 58%;
+      width: 25rem;
+    }
 
     & input {
       width: 100%;
@@ -61,6 +83,11 @@
       margin: 2.8rem 0 0;
       font-size: 1.5rem;
       color: var(--color-secondary);
+
+      @media only screen and (max-width: $bp-smallest) {
+        margin: .8rem 0 0;
+        font-size: 1.1rem;
+      }
     }
 
     & button {
@@ -91,7 +118,12 @@
       padding: 1.6rem .4rem 1.6rem 0;
       border-radius: .6rem;
       font-size: 1.3rem;
-      box-shadow: 1rem 1rem 4rem -1.4rem #000
+      box-shadow: 1rem 1rem 4rem -1.4rem #000;
+
+      @media only screen and (max-width: $bp-small) {
+        font-size: 1.1rem;
+        width: 28rem;
+      }
     }
 
     & a {

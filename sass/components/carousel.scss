@@ -11,7 +11,7 @@
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  width: 100%;
+  min-width: 700px;
   height: 48.5rem;
   max-width: 1000px;
   margin: auto;
@@ -22,6 +22,16 @@
   -ms-flex-direction: column;
   flex-direction: column;
   position: relative;
+
+  @media only screen and (max-width: $bp-small) {
+    min-width: 300px;
+    max-width: 400px;
+  }
+
+  @media only screen and (max-width: $bp-smallest) {
+    min-width: 280px;
+    max-width: 320px;
+  }
 }
 
 #left-zone {
@@ -35,6 +45,7 @@
   display: flex;
   margin: 2rem 0;
   width: 100%;
+
 }
 
 #left-zone .list {
@@ -59,6 +70,7 @@
 
 .item input {
   display: none;
+
 }
 
 .item label {
@@ -74,6 +86,11 @@
   margin-top: 0.5rem;
   opacity: 0.8;
   position: relative;
+
+  @media only screen and (max-width: $bp-small) {
+    visibility: hidden;
+  }
+
 }
 
 .item label:hover {
@@ -109,14 +126,24 @@
   flex-direction: column;
   pointer-events: none;
 
+  @media only screen and (max-width: $bp-small) {
+    height: 100%;
+  }
+
   &-horiz {
     display: flex;
     flex-direction: row;
+
+    @media only screen and (max-width: $bp-small) {
+      flex-direction: column;
+    }
 
     &-sub {
       display: flex;
       flex-direction: column;
       align-items: center;
+      margin: 0;
+      padding: 1rem 0;
     }
   }
 }
@@ -131,17 +158,30 @@
   padding: 1rem 0;
   max-width: 60%;
   text-align: center;
+
+  @media only screen and (max-width: $bp-small) {
+    font-size: 1.15rem;
+    max-width: 84%;
+  }
 }
 
 .content-test h1 {
   color: var(--color-white-2);
   font-family: var(font-jo);
-  
   text-align: center;
+
+  @media only screen and (max-width: $bp-small) {
+   font-size: 1.8rem;
+  }
 }
 
 .content-test-horiz-sub p {
   max-width: 75%;
+
+  @media only screen and (max-width: $bp-small) {
+    font-size: 1.1rem;
+    max-width: 88%;
+  }
 }
 
 .content-test-horiz-sub h1 {
@@ -177,12 +217,6 @@ input:checked ~ .content-test {
     -ms-flex-direction: row;
     flex-direction: row;
     min-height: auto;
-    // height: 400px;
-    /* position: absolute; */
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
   }
 
   #left-zone .list {
@@ -243,6 +277,19 @@ input:checked ~ .content-test {
   background-size: cover;
   background-repeat: no-repeat;
   margin: 0 0 3rem;
+}
+
+.content-test-horiz-sub .picto {
+  height: 100px;
+  width: 100px;
+}
+
+.picto-sub {
+  @media only screen and (max-width: $bp-small) {
+    height: 0;
+    margin: 0;
+    width: 0;
+   }
 }
 
 .content_testimonial-1 {

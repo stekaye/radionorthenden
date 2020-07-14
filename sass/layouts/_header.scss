@@ -8,18 +8,45 @@
   height: 92vh;
   position: relative;
 
+  @media only screen and (max-width: $bp-smallest) {
+    height: 95vh;
+    margin: 12px;
+  }
+
   &__text-box {
     @include absCenter;
     text-align: center;
     width: 100%;
+
+    @media only screen and (max-width: $bp-medium) {
+      top: 42%;
+    }
+
+    @media only screen and (max-width: $bp-small) {
+      top: 38%;
+    }
   }
 
   &__buttons {
     left: 50%;
+    padding: 0 3rem;
     position: absolute;
     top: 120%;
     transform: translate(-50%, -50%);
     width: 100%;
+
+    @media only screen and (max-width: $bp-medium) {
+      top: 110%;
+    }
+
+    @media only screen and (max-width: $bp-small) {
+      margin-top: 2rem;
+      top: 100%;
+    }
+
+    @media only screen and (max-width: $bp-smallest) {
+      top: 90%;
+    }
   }
 
   &__logo-box {
@@ -37,6 +64,14 @@
 
   &__logo {
     height: 6rem; 
+
+    @media only screen and (max-width: $bp-small) {
+      height: 3.5rem;
+    }
+
+    @media only screen and (max-width: $bp-smallest) {
+      height: 3rem;
+    }
   }
 
   &__social-icons {
@@ -46,6 +81,22 @@
     left: 50%;
     transform: translate(-50%, -50%);
     display: flex;
+
+    @media only screen and (max-width: $bp-large) {
+      top: 78%;
+    }
+
+    @media only screen and (max-width: $bp-medium) {
+      top: 68%;
+    }
+
+    @media only screen and (max-width: $bp-small) {
+      top: 92%;
+    }
+
+    @media only screen and (max-width: $bp-smallest) {
+      top: 92%;
+    }
 
     li {
       list-style: none;
@@ -64,6 +115,22 @@
         font-weight: bold;
         margin: 0 1rem;
         opacity: 0.8;
+
+        @media only screen and (max-width: $bp-small) {
+          font-size: 1.5rem;
+          height: 40px;
+          line-height: 40px;
+          opacity: 1;
+          width: 40px;
+        }
+
+        @media only screen and (max-width: $bp-smallest) {
+          font-size: 1.5rem;
+          height: 35px;
+          line-height: 35px;
+          opacity: 1;
+          width: 35px;
+        }
 
           &:hover {
             background-color: var(--color-orange-bright);

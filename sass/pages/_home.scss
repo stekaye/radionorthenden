@@ -6,8 +6,16 @@
   //   rgba(#015668, 0.8));
   padding: 8rem 2rem;
 
+  @media only screen and (max-width: $bp-small) {
+    padding: 5rem 2rem;
+    }
+
   &__container {
     display: flex;
+
+    @media only screen and (max-width: $bp-medium) {
+      flex-direction: column;
+    }
   }
 
   &__image {
@@ -19,12 +27,23 @@
     flex: 1 1 35%;
     margin: 0 2rem 5rem 8rem;
     opacity: 0.8;
+
+    @media only screen and (max-width: $bp-medium) {
+      flex: 1;
+      height: 50vh;
+      margin: 0;
+    }
   }
 
   &__text-box {
     color: var(--color-secondary);
     flex: 1 1 65%;
     padding: 0 8rem 3rem 6rem;
+
+    @media only screen and (max-width: $bp-medium) {
+      flex: 1;
+      padding: 2rem 0;
+    }
 
     &--paragraph {
       font-family: var(--font-mo);
@@ -33,6 +52,13 @@
       line-height: 1.8;
       padding: 1rem 0;
       text-align: left;
+
+      @media only screen and (max-width: $bp-small) {
+        font-size: 1.4rem;
+        font-weight: 200;
+        line-height: 1.6;
+        text-align: justify;
+      }
     }
 
     &--heading {
@@ -41,6 +67,10 @@
       line-height: 1.8;
       padding: 1rem 0;
       text-align: justify;
+
+      @media only screen and (max-width: $bp-medium) {
+        text-align: center;
+      }
     }
   }
 }
@@ -50,14 +80,36 @@
 .presenter-section__container {
   max-width: 90vw;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-evenly;
   margin: 0rem auto 4rem;
+
+  @media only screen and (max-width: $bp-small) {
+    align-items: center;
+    justify-content: center;
+    max-width: 95vw;
+    flex-direction: column;
+    flex-wrap: nowrap;
+  }
 }
 
 .card-wrapper {
   width: 400px;
   height: 500px;
   position: relative;
+
+  @media only screen and (max-width: $bp-medium) {
+    height: 420px;
+    width: 320px;
+  }
+
+  @media only screen and (max-width: $bp-small) {
+    flex: 1;
+    height: 400px;
+    overflow: hidden;
+    width: 300px;
+  }
+
 }
 
 .card {
@@ -72,6 +124,11 @@
   box-shadow: 0 5px 18px rgba(0, 0, 0, 0.6);
   cursor: pointer;
   transition: 0.5s;
+
+  @media only screen and (max-width: $bp-medium) {
+    height: 360px;
+    width: 260px;
+  }
   
   .card-image {
     background-position: center;
@@ -85,6 +142,12 @@
     transition: .5s;
     width: 100%;
     z-index: -1;
+
+    @media only screen and (max-width: $bp-medium) {
+      left: 50%;
+      opacity: 0.7;
+      top: 38%;
+    }
 
     &__sanny {
       background-image: url(/img/sanny_transparent.png);
@@ -105,6 +168,12 @@
   opacity: 0.4;
   transform: translate(-10%, -50%);
   transition: all .9s;
+
+  @media only screen and (max-width: $bp-medium) {
+    opacity: 0.7;
+    transform: translate(-50%, -50%);
+    transition: none;
+  }
 }
 
 /**** Social Icons *****/
@@ -116,6 +185,11 @@
   transform: translate(-50%, -50%);
   z-index: 3;
   display: flex;
+
+  @media only screen and (max-width: $bp-medium) {
+    left: 50%;
+    top: 90%;
+  }
   
   li {
     list-style: none;
@@ -135,6 +209,15 @@
       transition: .4s;
       transform: translateY(200px);
       opacity: 0;
+      
+      @media only screen and (max-width: $bp-medium) {
+        line-height: 45px;
+        opacity: .8;
+        transform: translateY(0px);
+        width: 45px;
+        height: 45px;
+      }
+
     } 
   }
 
@@ -142,6 +225,10 @@
     li {
       a {
         background: var(--color-secondary);
+
+        @media only screen and (max-width: $bp-medium) {
+          background: var(--color-orange);
+        }
       }
     }
     
@@ -151,6 +238,10 @@
     li {
       a {
         background: var(--color-primary);
+
+        @media only screen and (max-width: $bp-medium) {
+          background: var(--color-secondary);
+        }
       }
     }
     
@@ -160,6 +251,10 @@
     li {
       a {
         background: var(--color-orange);
+
+        @media only screen and (max-width: $bp-medium) {
+          background: var(--color-primary);
+        }
       }
     }
     
@@ -235,38 +330,66 @@
     margin: 1rem 0 2rem;
     padding: 0;
     text-align: center;
+
     .job-title {
         font-size: 1.3rem;
         line-height: 1.2rem;
         color: #fff;
         font-weight: 200;
+
+        @media only screen and (max-width: $bp-medium) {
+          visibility: hidden;
+        }
     }
   }
 }
 
 // SHOWS SECTION 
 
+
+
 .media-section {
   margin: 10rem 8rem;
 
   &__container {
-    align-items: top;
+    align-items: center;
     display: flex;
-    // height: 60rem;
-    justify-content: center;
+    justify-content: space-around;
     margin: 4rem 0;
+
+    @media only screen and (max-width: $bp-medium) {
+      align-items: center;
+      flex-direction: column-reverse;
+    }
   }
 }
 
 .twitter-feed {
   box-shadow: 0 5px 18px rgba(0, 0, 0, 0.6);
   flex: 1 1 30%;
-  margin: 0 1rem
+  margin: 0 1rem;
+
+  @media only screen and (max-width: $bp-medium) {
+    width: 600px;
+  }
+
+  @media only screen and (max-width: $bp-small) {
+    width: 350px;
+  }
+
+  @media only screen and (max-width: $bp-smallest) {
+    width: 280px;
+  }
 }
 
 .shows-section {
   // height: 100%;
   flex: 1 1 70%;
+
+  @media only screen and (max-width: $bp-medium) {
+    flex: 1;
+    margin: 0 0 6rem;
+  }
 }
 
 // CONTACT SECTION 

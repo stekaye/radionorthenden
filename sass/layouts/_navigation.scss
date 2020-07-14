@@ -17,6 +17,16 @@
     top: 6rem;
     width: 7rem;
     z-index: 2000;
+
+    @media only screen and (max-width: $bp-small) {
+      height: 5rem;
+      width: 5rem;
+    }
+
+    @media only screen and (max-width: $bp-smallest) {
+      height: 4.2rem;
+      width: 4.2rem;
+    }
   }
 
   &__background {
@@ -30,6 +40,18 @@
     transition: transform .8s cubic-bezier(0.83, 0, 0.17, 1);
     width: 6rem;
     z-index: 1000;
+
+    @media only screen and (max-width: $bp-small) {
+      height: 5rem;
+      width: 5rem;
+      right: 6rem;
+      top: 6rem;
+    }
+
+    @media only screen and (max-width: $bp-smallest) {
+      height: 4.2rem;
+      width: 4.2rem;
+    }
   }
 
   &__nav {
@@ -72,6 +94,14 @@
       text-transform: uppercase;
       transition: all .4s;
 
+      @media only screen and (max-width: $bp-small) {
+        font-size: 2rem;
+      }
+  
+      @media only screen and (max-width: $bp-smallest) {
+        font-size: 1.8rem;
+      }
+
       span {
         margin-right: 1.5rem;
       }
@@ -103,6 +133,14 @@
     position: relative;
     margin-top: 3.5rem;
 
+    @media only screen and (max-width: $bp-small) {
+      margin-top: 2.5rem;
+    }
+
+    @media only screen and (max-width: $bp-smallest) {
+      margin-top: 2rem;
+    }
+
     &,
     &::before,
     &::after {
@@ -110,6 +148,14 @@
       display: inline-block;
       height: 2px;
       width: 3rem;
+
+      @media only screen and (max-width: $bp-small) {
+        width: 2rem;
+      }
+  
+      @media only screen and (max-width: $bp-smallest) {
+        width: 2rem;
+      }
     }
 
     &::before,
