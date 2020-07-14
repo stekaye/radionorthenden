@@ -29,7 +29,7 @@
     opacity: 0.8;
 
     @media only screen and (max-width: $bp-medium) {
-      flex: 1 1 50vh;
+      flex: 1 1 55vh;
       margin: 0;
     }
   }
@@ -159,6 +159,16 @@
     &__kevin {
       background-image: url(/img/kevin_transparent.png);
     }
+
+    &__emma {
+      background-image: url(/img/emma_transp.png);
+      height: 64%;
+      width: 320px;
+
+      @media only screen and (max-width: $bp-medium) {
+        width: 240px;
+      }
+    }
   }
 }
 
@@ -258,6 +268,19 @@
     
   }
 
+  &__emma {
+    li {
+      a {
+        background: #c06c84;
+
+        @media only screen and (max-width: $bp-medium) {
+          background: #fecb89;
+        }
+      }
+    }
+    
+  }
+
 }
 
 .card:hover .social-icons li a {
@@ -284,6 +307,13 @@
 
 .social-icons__kevin li a:hover {
   background: var(--color-primary);
+  transition: .1s;
+  .fab {
+    color: var(--color-grey-light-1);
+  } 
+}
+.social-icons__emma li a:hover {
+  background: #fecb89;
   transition: .1s;
   .fab {
     color: var(--color-grey-light-1);
@@ -320,6 +350,10 @@
 
   &__kevin {
     background: var(--color-orange);
+  }
+
+  &__emma {
+    background: #c06c84;
   }
 
   h2 {

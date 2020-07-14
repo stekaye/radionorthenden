@@ -77,25 +77,25 @@
   &__social-icons {
 
     position: absolute;
-    top: 85%;
+    top: 164%;
     left: 50%;
     transform: translate(-50%, -50%);
     display: flex;
 
     @media only screen and (max-width: $bp-large) {
-      top: 78%;
+      top: 150%;
     }
 
     @media only screen and (max-width: $bp-medium) {
-      top: 68%;
+      top: 160%;
     }
 
     @media only screen and (max-width: $bp-small) {
-      top: 92%;
+      top: 170%;
     }
 
     @media only screen and (max-width: $bp-smallest) {
-      top: 92%;
+      top: 160%;
     }
 
     li {
