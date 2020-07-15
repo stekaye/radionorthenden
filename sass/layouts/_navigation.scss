@@ -20,11 +20,15 @@
 
     @media only screen and (max-width: $bp-small) {
       height: 5rem;
+      right: 4.5rem;
+      top: 4.5rem;
       width: 5rem;
     }
 
     @media only screen and (max-width: $bp-smallest) {
       height: 4.2rem;
+      right: 3rem;
+      top: 3rem;
       width: 4.2rem;
     }
   }
@@ -44,12 +48,14 @@
     @media only screen and (max-width: $bp-small) {
       height: 5rem;
       width: 5rem;
-      right: 6rem;
-      top: 6rem;
+      right: 4.5rem;
+      top: 4.5rem;
     }
 
     @media only screen and (max-width: $bp-smallest) {
       height: 4.2rem;
+      right: 3rem;
+      top: 3rem;
       width: 4.2rem;
     }
   }

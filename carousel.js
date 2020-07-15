@@ -1,6 +1,8 @@
 // Makeshift carousel function that gets invoked with the Index to start it off, then the callback increments the index to recursively invoke the same function. Works even in IE11!
+
 var testimonialItems = document.querySelectorAll(".item label");
 var timer;
+
 function cycleTestimonials(index) {
    timer = setTimeout(function() {
     var evt;

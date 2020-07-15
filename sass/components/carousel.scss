@@ -29,13 +29,13 @@
   }
 
   @media only screen and (max-width: $bp-smallest) {
-    min-width: 280px;
-    max-width: 320px;
+    min-width: 260px;
+    max-width: 300px;
   }
 }
 
 #left-zone {
-  background-color: var(--color-white-1);
+  background-color: var(--color-white-2);
   height: 100%;
   -webkit-box-flex: 0;
   -ms-flex: 0 0 auto;
@@ -45,6 +45,25 @@
   display: flex;
   margin: 2rem 0;
   width: 100%;
+
+  & h2 {
+
+    display: none;
+
+    @media only screen and (max-width: $bp-small) {
+      color: var(--color-secondary);
+      display: initial;
+      font-family: var(--font-jo);
+      font-size: 3.5rem;
+      font-weight: 400;
+      left: 50%;
+      position: relative;
+      top: 60%;
+      text-align: center;
+      transform: translate(-50%, -50%);
+      width: 80%;
+    }
+  }
 
 }
 
@@ -243,12 +262,26 @@
 
 
 #right-zone {
-  // background-color: var(--color-secondary);
+  background-color: var(--color-grey-dark-3);
   width: 100%;
   -webkit-box-flex: 1;
   -ms-flex: 1 0 auto;
   flex: 1 0 auto;
+  z-index: -2;
   // height: 50%;
+
+  & h1 {
+    color: #fff;
+    font-family: var(--font-jo);
+    font-size: 4rem;
+    font-weight: 100;
+    left: 50%;
+    position: relative;
+    top: 80%;
+    text-align: center;
+    transform: translate(-50%, -50%);
+    width: 80%;
+  }
 }
 
 input:checked ~ .content-test {
@@ -333,8 +366,11 @@ input:checked ~ .content-test {
 }
 
 .content-test-horiz-sub .picto {
-  height: 100px;
-  width: 100px;
+
+  @media only screen and (max-width: $bp-small) {
+    height: 100px;
+    width: 100px;
+  }
 }
 
 .picto-sub {
@@ -392,7 +428,7 @@ input:checked ~ .content-test {
     background-image: url("/img/breakfast.jpg");
   }
   & .picto-sub {
-    background-image: url("/img/sing.jpg");
+    background-image: url("/img/dan.jpg");
   }
 }
 
