@@ -31,6 +31,13 @@
       top: 3rem;
       width: 4.2rem;
     }
+
+    @media only screen and (max-height: $bp-mobland) {
+      height: 3.5rem;
+      right: 2.5rem;
+      top: 2.5rem;
+      width: 3.5rem;
+    }
   }
 
   &__background {
@@ -57,6 +64,13 @@
       right: 3rem;
       top: 3rem;
       width: 4.2rem;
+    }
+
+    @media only screen and (max-height: $bp-mobland) {
+      height: 3.5rem;
+      right: 2.5rem;
+      top: 2.5rem;
+      width: 3.5rem;
     }
   }
 
@@ -147,6 +161,10 @@
       margin-top: 2rem;
     }
 
+    @media only screen and (max-height: $bp-mobland) {
+      margin-top: 1.8rem;
+    }
+
     &,
     &::before,
     &::after {
@@ -161,6 +179,10 @@
   
       @media only screen and (max-width: $bp-smallest) {
         width: 2rem;
+      }
+
+      @media only screen and (max-height: $bp-mobland) {
+        width: 1.7rem;
       }
     }
 

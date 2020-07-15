@@ -32,6 +32,14 @@
       flex: 1 1 55vh;
       margin: 0;
     }
+
+    @media only screen and (max-height: $bp-mobland) {
+      background-image: url(../../img/sanny.jpg);
+      background-size: cover;
+      flex: 1 1 70vh;
+      margin: 0 auto;
+      width: 50vw;
+    }
   }
 
   &__text-box {
@@ -172,12 +180,13 @@
 
     &__dan {
       background-image: url(/img/dan_transp2.png);
-      left: 40%;
+      left: 35%;
+      height: 80%;
     }
 
     &__alex {
-      background-image: url(/img/alex.png);
-      // left: 35%;
+      background-image: url(/img/alex_transp.png);
+      width: 80%;
     }
   }
 }
@@ -444,7 +453,7 @@
   &__container {
     align-items: center;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     margin: 4rem 0;
 
     @media only screen and (max-width: $bp-medium) {
@@ -456,8 +465,9 @@
 
 .twitter-feed {
   box-shadow: 0 5px 18px rgba(0, 0, 0, 0.6);
-  flex: 1 1 30%;
-  margin: 0 1rem;
+  flex: 1 1 28vw;
+  justify-self: stretch;
+  margin: 0 1rem 0 0;
 
   @media only screen and (max-width: $bp-medium) {
     width: 600px;
@@ -473,8 +483,11 @@
 }
 
 .shows-section {
+  display: flex;
+  justify-content: center;
   // height: 100%;
-  flex: 1 1 70%;
+  flex: 1;
+  margin: 0 0 0 1rem;
 
   @media only screen and (max-width: $bp-medium) {
     flex: 1;

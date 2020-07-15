@@ -32,6 +32,11 @@
     min-width: 260px;
     max-width: 300px;
   }
+
+  @media only screen and (max-height: $bp-mobland) {
+    min-width: 300px;
+    max-width: 400px;
+   }
 }
 
 #left-zone {
@@ -54,15 +59,18 @@
       color: var(--color-secondary);
       display: initial;
       font-family: var(--font-jo);
-      font-size: 3.5rem;
-      font-weight: 400;
+      font-size: 2.3rem;
+      font-weight: 200;
       left: 50%;
+      line-height: 1.8;
+      margin: 0 auto;
       position: relative;
       top: 60%;
       text-align: center;
       transform: translate(-50%, -50%);
-      width: 80%;
+      min-width: 250px;
     }
+
   }
 
 }
@@ -111,11 +119,17 @@
 }
 
 .mobile-input-section {
+
+  
   &__list {
 
-    display: flex;
-    flex-direction: row;
-    list-style: none;
+    display: none;
+
+    @media only screen and (max-width: $bp-medium) {
+      display: flex;
+      flex-direction: row;
+      list-style: none;
+    }
   }
 
   &__item input {
@@ -273,7 +287,7 @@
   & h1 {
     color: #fff;
     font-family: var(--font-jo);
-    font-size: 4rem;
+    font-size: 3rem;
     font-weight: 100;
     left: 50%;
     position: relative;
@@ -327,6 +341,8 @@ input:checked ~ .content-test {
     width: 65%;
   }
 }
+
+
 /* If the screen size is 480px or less */
 @media (max-width: 480px) {
   .content_testimonial-1 .picto {
@@ -425,7 +441,7 @@ input:checked ~ .content-test {
   background-color: #4f8a8b;
 
   & .picto {
-    background-image: url("/img/breakfast.jpg");
+    background-image: url("/img/indiebreakfast.jpg");
   }
   & .picto-sub {
     background-image: url("/img/dan.jpg");
@@ -436,6 +452,11 @@ input:checked ~ .content-test {
   background-color: #c06c84;
 
   & .picto {
+    background-color: #fecb89;
+    background-image: url("/img/alex_transp.png");
+  }
+
+  & .picto-sub {
     background-image: url("/img/stage.jpg");
   }
 }
@@ -506,7 +527,8 @@ label:before {
 }
 
 .label_testimonial-1:before {
-  background-image: url("/img/sanny_transparent.png");
+  background-color: var(--color-secondary);
+  background-image: url("/img/sanny_transp.png");
 
   @media only screen and (max-width: $bp-small) {
     visibility: hidden;
@@ -514,7 +536,8 @@ label:before {
 }
 
 .label_testimonial-2:before {
-  background-image: url("/img/yoga.jpg");
+  background-color: var(--color-primary);
+  background-image: url("/img/emma_transp2.png");
 
   @media only screen and (max-width: $bp-small) {
     visibility: hidden;
@@ -522,7 +545,8 @@ label:before {
 }
 
 .label_testimonial-3:before {
-  background-image: url("/img/Katie.png");
+  background-color: #ba6b57;
+  background-image: url("/img/katie-transp.png");
 
   @media only screen and (max-width: $bp-small) {
     visibility: hidden;
@@ -530,7 +554,8 @@ label:before {
 }
 
 .label_testimonial-4:before {
-  background-image: url("/img/Kev.png");
+  background-color: var(--color-orange);
+  background-image: url("/img/kev_transp.png");
 
   @media only screen and (max-width: $bp-small) {
     visibility: hidden;
@@ -538,7 +563,8 @@ label:before {
 }
 
 .label_testimonial-5:before {
-  background-image: url("/img/sanny_profile_1.JPG");
+  background-color: #fecb89;
+  background-image: url("/img/sanny_transp.png");
 
   @media only screen and (max-width: $bp-small) {
     visibility: hidden;
@@ -546,7 +572,8 @@ label:before {
 }
 
 .label_testimonial-6:before {
-  background-image: url("/img/breakfast.jpg");
+  background-color: #4f8a8b;
+  background-image: url("/img/dan_transp2.png");
 
   @media only screen and (max-width: $bp-small) {
     visibility: hidden;
@@ -554,7 +581,8 @@ label:before {
 }
 
 label.label_testimonial-7:before {
-  background-image: url("/img/stage.jpg");
+  background-color: #c06c84;
+  background-image: url("/img/alex_transp.png");
 
   @media only screen and (max-width: $bp-small) {
     visibility: hidden;

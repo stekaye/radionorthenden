@@ -39,6 +39,12 @@ body {
   @media only screen and (max-width: 25em) {
     body {
       padding: 0; } }
+  @media only screen and (max-height: 31.25em) {
+    body {
+      padding: 10px; } }
+
+a {
+  text-decoration: none; }
 
 .heading-primary {
   backface-visibility: hidden;
@@ -68,6 +74,11 @@ body {
         font-size: 3rem;
         letter-spacing: .4rem;
         margin: 0 1rem 1rem; } }
+    @media only screen and (max-height: 31.25em) {
+      .heading-primary--main {
+        font-size: 3.5rem;
+        letter-spacing: .4rem;
+        margin: 0 1rem 1rem; } }
   .heading-primary--sub {
     animation: moveInRight 1s ease-out;
     display: block;
@@ -86,6 +97,11 @@ body {
         font-size: 1.1rem;
         letter-spacing: .2rem;
         margin: 0 4rem; } }
+    @media only screen and (max-height: 31.25em) {
+      .heading-primary--sub {
+        font-size: 1.4rem;
+        letter-spacing: .4rem;
+        margin: 0 1rem 1rem; } }
 
 .footer-primary {
   backface-visibility: hidden;
@@ -298,6 +314,9 @@ body {
     .contact-section {
       margin: 0;
       padding: 0; } }
+  @media only screen and (max-height: 31.25em) {
+    .contact-section {
+      height: 200vh; } }
   .contact-section__heading {
     color: var(--color-white-1);
     display: block;
@@ -444,6 +463,10 @@ body {
     #flex-container {
       min-width: 260px;
       max-width: 300px; } }
+  @media only screen and (max-height: 31.25em) {
+    #flex-container {
+      min-width: 300px;
+      max-width: 400px; } }
 
 #left-zone {
   background-color: var(--color-white-2);
@@ -463,14 +486,16 @@ body {
         color: var(--color-secondary);
         display: initial;
         font-family: var(--font-jo);
-        font-size: 3.5rem;
-        font-weight: 400;
+        font-size: 2.3rem;
+        font-weight: 200;
         left: 50%;
+        line-height: 1.8;
+        margin: 0 auto;
         position: relative;
         top: 60%;
         text-align: center;
         transform: translate(-50%, -50%);
-        width: 80%; } }
+        min-width: 250px; } }
 
 #left-zone .list {
   display: -webkit-box;
@@ -512,9 +537,12 @@ body {
       visibility: hidden; } }
 
 .mobile-input-section__list {
-  display: flex;
-  flex-direction: row;
-  list-style: none; }
+  display: none; }
+  @media only screen and (max-width: 56.25em) {
+    .mobile-input-section__list {
+      display: flex;
+      flex-direction: row;
+      list-style: none; } }
 
 .mobile-input-section__item input {
   border-right: none;
@@ -640,7 +668,7 @@ body {
   #right-zone h1 {
     color: #fff;
     font-family: var(--font-jo);
-    font-size: 4rem;
+    font-size: 3rem;
     font-weight: 100;
     left: 50%;
     position: relative;
@@ -749,13 +777,16 @@ input:checked ~ .content-test {
 .content_testimonial-6 {
   background-color: #4f8a8b; }
   .content_testimonial-6 .picto {
-    background-image: url("/img/breakfast.jpg"); }
+    background-image: url("/img/indiebreakfast.jpg"); }
   .content_testimonial-6 .picto-sub {
     background-image: url("/img/dan.jpg"); }
 
 .content_testimonial-7 {
   background-color: #c06c84; }
   .content_testimonial-7 .picto {
+    background-color: #fecb89;
+    background-image: url("/img/alex_transp.png"); }
+  .content_testimonial-7 .picto-sub {
     background-image: url("/img/stage.jpg"); }
 
 .content-test h1:first-letter {
@@ -812,43 +843,50 @@ label:before {
       visibility: hidden; } }
 
 .label_testimonial-1:before {
-  background-image: url("/img/sanny_transparent.png"); }
+  background-color: var(--color-secondary);
+  background-image: url("/img/sanny_transp.png"); }
   @media only screen and (max-width: 37.5em) {
     .label_testimonial-1:before {
       visibility: hidden; } }
 
 .label_testimonial-2:before {
-  background-image: url("/img/yoga.jpg"); }
+  background-color: var(--color-primary);
+  background-image: url("/img/emma_transp2.png"); }
   @media only screen and (max-width: 37.5em) {
     .label_testimonial-2:before {
       visibility: hidden; } }
 
 .label_testimonial-3:before {
-  background-image: url("/img/Katie.png"); }
+  background-color: #ba6b57;
+  background-image: url("/img/katie-transp.png"); }
   @media only screen and (max-width: 37.5em) {
     .label_testimonial-3:before {
       visibility: hidden; } }
 
 .label_testimonial-4:before {
-  background-image: url("/img/Kev.png"); }
+  background-color: var(--color-orange);
+  background-image: url("/img/kev_transp.png"); }
   @media only screen and (max-width: 37.5em) {
     .label_testimonial-4:before {
       visibility: hidden; } }
 
 .label_testimonial-5:before {
-  background-image: url("/img/sanny_profile_1.JPG"); }
+  background-color: #fecb89;
+  background-image: url("/img/sanny_transp.png"); }
   @media only screen and (max-width: 37.5em) {
     .label_testimonial-5:before {
       visibility: hidden; } }
 
 .label_testimonial-6:before {
-  background-image: url("/img/breakfast.jpg"); }
+  background-color: #4f8a8b;
+  background-image: url("/img/dan_transp2.png"); }
   @media only screen and (max-width: 37.5em) {
     .label_testimonial-6:before {
       visibility: hidden; } }
 
 label.label_testimonial-7:before {
-  background-image: url("/img/stage.jpg"); }
+  background-color: #c06c84;
+  background-image: url("/img/alex_transp.png"); }
   @media only screen and (max-width: 37.5em) {
     label.label_testimonial-7:before {
       visibility: hidden; } }
@@ -922,7 +960,7 @@ label:first-letter {
 
 /* ============== End Testimonial Flexbox ============= */
 .header {
-  background-image: linear-gradient(to right bottom, rgba(142, 198, 197, 0.7), rgba(105, 131, 170, 0.7)), url(../../img/hero_5.jpg);
+  background-image: linear-gradient(to right bottom, rgba(142, 198, 197, 0.7), rgba(105, 131, 170, 0.7)), url(../../img/photocomp3.jpg);
   background-position: center;
   background-size: cover;
   height: 92vh;
@@ -961,6 +999,9 @@ label:first-letter {
     @media only screen and (max-width: 25em) {
       .header__buttons {
         top: 90%; } }
+    @media only screen and (max-height: 31.25em) {
+      .header__buttons {
+        top: 95%; } }
   .header__logo-box {
     left: 37%;
     position: absolute;
@@ -977,6 +1018,9 @@ label:first-letter {
     @media only screen and (max-width: 25em) {
       .header__logo {
         height: 3rem; } }
+    @media only screen and (max-height: 31.25em) {
+      .header__logo {
+        height: 4rem; } }
   .header__social-icons {
     position: absolute;
     top: 164%;
@@ -995,6 +1039,9 @@ label:first-letter {
     @media only screen and (max-width: 25em) {
       .header__social-icons {
         top: 140%; } }
+    @media only screen and (max-height: 31.25em) {
+      .header__social-icons {
+        top: 145%; } }
     .header__social-icons li {
       list-style: none; }
       .header__social-icons li a {
@@ -1019,6 +1066,13 @@ label:first-letter {
             opacity: 1;
             width: 40px; } }
         @media only screen and (max-width: 25em) {
+          .header__social-icons li a {
+            font-size: 1.5rem;
+            height: 35px;
+            line-height: 35px;
+            opacity: 1;
+            width: 35px; } }
+        @media only screen and (max-height: 31.25em) {
           .header__social-icons li a {
             font-size: 1.5rem;
             height: 35px;
@@ -1071,15 +1125,11 @@ label:first-letter {
     transform: translate(-50%, -50%);
     width: 100%; }
     .footer__supporter-logo a img {
-      width: 10rem;
       margin: 2rem 1rem;
-      height: auto; }
+      height: 4rem; }
       @media only screen and (max-width: 37.5em) {
         .footer__supporter-logo a img {
-          width: 7rem; } }
-      @media only screen and (max-width: 25em) {
-        .footer__supporter-logo a img {
-          width: 6rem; } }
+          height: 3rem; } }
   .footer__buttons {
     left: 50%;
     margin: 2rem 0;
@@ -1181,6 +1231,12 @@ label:first-letter {
       right: 3rem;
       top: 3rem;
       width: 4.2rem; } }
+  @media only screen and (max-height: 31.25em) {
+    .navigation__button {
+      height: 3.5rem;
+      right: 2.5rem;
+      top: 2.5rem;
+      width: 3.5rem; } }
 
 .navigation__background {
   background-image: linear-gradient(to right bottom, #8ec6c5, #6983aa);
@@ -1204,6 +1260,12 @@ label:first-letter {
       right: 3rem;
       top: 3rem;
       width: 4.2rem; } }
+  @media only screen and (max-height: 31.25em) {
+    .navigation__background {
+      height: 3.5rem;
+      right: 2.5rem;
+      top: 2.5rem;
+      width: 3.5rem; } }
 
 .navigation__nav {
   height: 100vh;
@@ -1269,6 +1331,9 @@ label:first-letter {
   @media only screen and (max-width: 25em) {
     .navigation__icon {
       margin-top: 2rem; } }
+  @media only screen and (max-height: 31.25em) {
+    .navigation__icon {
+      margin-top: 1.8rem; } }
   .navigation__icon, .navigation__icon::before, .navigation__icon::after {
     background-color: var(--color-grey-dark-2);
     display: inline-block;
@@ -1280,6 +1345,9 @@ label:first-letter {
     @media only screen and (max-width: 25em) {
       .navigation__icon, .navigation__icon::before, .navigation__icon::after {
         width: 2rem; } }
+    @media only screen and (max-height: 31.25em) {
+      .navigation__icon, .navigation__icon::before, .navigation__icon::after {
+        width: 1.7rem; } }
   .navigation__icon::before, .navigation__icon::after {
     content: "";
     left: 0;
@@ -1329,6 +1397,13 @@ label:first-letter {
       .about-section__image {
         flex: 1 1 55vh;
         margin: 0; } }
+    @media only screen and (max-height: 31.25em) {
+      .about-section__image {
+        background-image: url(../../img/sanny.jpg);
+        background-size: cover;
+        flex: 1 1 70vh;
+        margin: 0 auto;
+        width: 50vw; } }
   .about-section__text-box {
     color: var(--color-secondary);
     flex: 1 1 65%;
@@ -1437,9 +1512,11 @@ label:first-letter {
           width: 240px; } }
     .card .card-image__dan {
       background-image: url(/img/dan_transp2.png);
-      left: 40%; }
+      left: 35%;
+      height: 80%; }
     .card .card-image__alex {
-      background-image: url(/img/alex.png); }
+      background-image: url(/img/alex_transp.png);
+      width: 80%; }
 
 .card:hover .card-image {
   opacity: 0.4;
@@ -1606,7 +1683,7 @@ label:first-letter {
   .media-section__container {
     align-items: center;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     margin: 4rem 0; }
     @media only screen and (max-width: 56.25em) {
       .media-section__container {
@@ -1615,8 +1692,9 @@ label:first-letter {
 
 .twitter-feed {
   box-shadow: 0 5px 18px rgba(0, 0, 0, 0.6);
-  flex: 1 1 30%;
-  margin: 0 1rem; }
+  flex: 1 1 28vw;
+  justify-self: stretch;
+  margin: 0 1rem 0 0; }
   @media only screen and (max-width: 56.25em) {
     .twitter-feed {
       width: 600px; } }
@@ -1628,7 +1706,10 @@ label:first-letter {
       width: 280px; } }
 
 .shows-section {
-  flex: 1 1 70%; }
+  display: flex;
+  justify-content: center;
+  flex: 1;
+  margin: 0 0 0 1rem; }
   @media only screen and (max-width: 56.25em) {
     .shows-section {
       flex: 1;

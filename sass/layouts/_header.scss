@@ -2,7 +2,7 @@
   background-image: linear-gradient(to right bottom, 
   rgba(#8ec6c5, 0.70), 
   rgba(#6983aa, 0.70)), 
-  url(../../img/hero_5.jpg);
+  url(../../img/photocomp3.jpg);
   background-position: center;
   background-size: cover;
   height: 92vh;
@@ -47,6 +47,10 @@
     @media only screen and (max-width: $bp-smallest) {
       top: 90%;
     }
+
+    @media only screen and (max-height: $bp-mobland) {
+      top: 95%;
+    }
   }
 
   &__logo-box {
@@ -72,6 +76,10 @@
     @media only screen and (max-width: $bp-smallest) {
       height: 3rem;
     }
+
+    @media only screen and (max-height: $bp-mobland) {
+      height: 4rem;
+    }
   }
 
   &__social-icons {
@@ -96,6 +104,10 @@
 
     @media only screen and (max-width: $bp-smallest) {
       top: 140%;
+    }
+
+    @media only screen and (max-height: $bp-mobland) {
+      top: 145%;
     }
 
     li {
@@ -125,6 +137,14 @@
         }
 
         @media only screen and (max-width: $bp-smallest) {
+          font-size: 1.5rem;
+          height: 35px;
+          line-height: 35px;
+          opacity: 1;
+          width: 35px;
+        }
+
+        @media only screen and (max-height: $bp-mobland) {
           font-size: 1.5rem;
           height: 35px;
           line-height: 35px;

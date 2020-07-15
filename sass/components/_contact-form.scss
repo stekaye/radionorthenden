@@ -16,6 +16,10 @@
     // width: 95vw;
   }
 
+  @media only screen and (max-height: $bp-mobland) {
+   height: 200vh;
+  }
+
 
   &__heading {
     color: var(--color-white-1);
