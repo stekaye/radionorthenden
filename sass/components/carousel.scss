@@ -482,7 +482,8 @@ input:checked ~ .content-test {
   background-color: #fecb89;
 
   & .picto {
-    background-image: url("/img/sanny_profile_1.JPG");
+    background-color: var(--color-white-1);
+    background-image: url("/img/sanny_transp.png");
   }
 }
 
@@ -583,7 +584,7 @@ label:before {
 
 .label_testimonial-1:before {
   background-color: var(--color-secondary);
-  background-image: url("/img/sanny_transp.png");
+  background-image: url("/img/sanny_transp2.png");
 
   @media only screen and (max-width: $bp-small) {
     visibility: hidden;
