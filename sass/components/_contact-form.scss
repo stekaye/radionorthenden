@@ -72,6 +72,10 @@
       font-family: var(--font-mo), sans-serif;
       transition: all .3s;
 
+      @media only screen and (max-width: $bp-small) {
+        font-size: 1rem;
+      }
+
       &:not(.submit) {
         border-bottom: 2px solid #bebed2;
       }

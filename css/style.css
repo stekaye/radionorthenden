@@ -359,6 +359,9 @@ a {
       border: 0;
       font-family: var(--font-mo), sans-serif;
       transition: all .3s; }
+      @media only screen and (max-width: 35em) {
+        .contact-section__form input {
+          font-size: 1rem; } }
       .contact-section__form input:not(.submit) {
         border-bottom: 2px solid #bebed2; }
       .contact-section__form input:focus {
@@ -480,6 +483,9 @@ a {
   display: flex;
   margin: 2rem 0;
   width: 100%; }
+  @media only screen and (max-height: 31.25em) {
+    #left-zone {
+      margin: 0 0; } }
   #left-zone h2 {
     display: none; }
     @media only screen and (max-width: 35em) {
@@ -537,7 +543,8 @@ a {
     .item label {
       font-size: 1.1rem;
       height: 35px;
-      line-height: 35px; } }
+      line-height: 35px;
+      margin-top: 0; } }
   @media only screen and (max-width: 35em) {
     .item label {
       visibility: hidden; } }
@@ -1340,6 +1347,10 @@ label:first-letter {
   text-decoration: none;
   text-transform: uppercase;
   transition: all .4s; }
+  @media only screen and (max-height: 31.25em) {
+    .navigation__link:link, .navigation__link:visited {
+      font-size: 2rem;
+      padding: 0.5rem 2rem; } }
   @media only screen and (max-width: 35em) {
     .navigation__link:link, .navigation__link:visited {
       font-size: 2rem; } }
