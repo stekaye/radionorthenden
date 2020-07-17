@@ -22,7 +22,7 @@
     var minute = today.getMinutes();
     var second = today.getSeconds();
     
-    if (hour >= 9  && (hour <= 13))  {
+    if (hour >= 7  && (hour <= 15))  {
       $("#buttonLive").show();
     } else {
       $("#buttonLive").hide();
@@ -34,7 +34,9 @@
     var minute = today.getMinutes();
     var second = today.getSeconds();
     
-    if (hour >= 21  && (hour <= 1))  {
+    if (hour >= 15  && (hour <= 18))  {
+      $("#buttonLive").show();
+    } else if (hour >= 21  && (hour <= 1))  {
       $("#buttonLive").show();
     } else {
       $("#buttonLive").hide();
