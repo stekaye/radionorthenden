@@ -1533,9 +1533,10 @@ label:first-letter {
     z-index: -1; }
     @media only screen and (max-width: 56.25em) {
       .card .card-image {
+        height: 50%;
         left: 50%;
         opacity: 0.7;
-        top: 38%; } }
+        top: 31%; } }
     .card .card-image__sanny {
       background-image: url(/img/sanny_transparent.png);
       width: 100%; }
@@ -1549,11 +1550,15 @@ label:first-letter {
       width: 320px; }
       @media only screen and (max-width: 56.25em) {
         .card .card-image__emma {
-          width: 240px; } }
+          height: 50%;
+          width: 200px; } }
     .card .card-image__dan {
       background-image: url(/img/dan_transp2.png);
       left: 35%;
       height: 80%; }
+      @media only screen and (max-width: 56.25em) {
+        .card .card-image__dan {
+          height: 70%; } }
     .card .card-image__alex {
       background-image: url(/img/alex_transp.png);
       width: 80%; }
@@ -1579,7 +1584,7 @@ label:first-letter {
   @media only screen and (max-width: 56.25em) {
     .social-icons {
       left: 50%;
-      top: 90%; } }
+      top: 64%; } }
   .social-icons li {
     list-style: none; }
     .social-icons li a {
@@ -1599,11 +1604,12 @@ label:first-letter {
       opacity: 0; }
       @media only screen and (max-width: 56.25em) {
         .social-icons li a {
+          font-size: 18px;
           line-height: 45px;
           opacity: .8;
           transform: translateY(0px);
-          width: 45px;
-          height: 45px; } }
+          width: 40px;
+          height: 40px; } }
   .social-icons__sanny li a {
     background: var(--color-secondary); }
     @media only screen and (max-width: 56.25em) {
@@ -1691,6 +1697,10 @@ label:first-letter {
   height: 120px;
   z-index: 1;
   padding: 10px; }
+  @media only screen and (max-width: 56.25em) {
+    .details {
+      height: 240px;
+      top: 55%; } }
   .details__sanny {
     background: var(--color-secondary); }
   .details__katie {
@@ -1709,6 +1719,9 @@ label:first-letter {
     margin: 1rem 0 2rem;
     padding: 0;
     text-align: center; }
+    @media only screen and (max-width: 56.25em) {
+      .details h2 {
+        margin: 5.2rem 0 2rem; } }
     .details h2 .job-title {
       font-size: 1.3rem;
       line-height: 1.2rem;
@@ -1716,7 +1729,7 @@ label:first-letter {
       font-weight: 200; }
       @media only screen and (max-width: 56.25em) {
         .details h2 .job-title {
-          visibility: hidden; } }
+          font-size: 1.15rem; } }
 
 .media-section {
   margin: 10rem 8rem; }
