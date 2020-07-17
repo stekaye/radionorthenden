@@ -25,17 +25,18 @@
 
   @media only screen and (max-width: $bp-small) {
     min-width: 300px;
-    max-width: 400px;
+    max-width: 380px;
   }
 
   @media only screen and (max-width: $bp-smallest) {
     min-width: 260px;
-    max-width: 300px;
+    max-width: 290px;
   }
 
   @media only screen and (max-height: $bp-mobland) {
+    max-height: 300px;
     min-width: 300px;
-    max-width: 400px;
+    max-width: 500px;
    }
 }
 
@@ -112,6 +113,12 @@
   margin-top: 0.5rem;
   opacity: 0.8;
   position: relative;
+
+  @media only screen and (max-height: $bp-mobland) {
+    font-size: 1.1rem;
+    height: 35px;
+    line-height: 35px;
+  }
 
   @media only screen and (max-width: $bp-small) {
     visibility: hidden;
@@ -245,6 +252,11 @@
   max-width: 60%;
   text-align: center;
 
+  @media only screen and (max-height: $bp-mobland) {
+    font-size: 1.15rem;
+    max-width: 84%;
+  }
+
   @media only screen and (max-width: $bp-small) {
     font-size: 1.15rem;
     max-width: 84%;
@@ -256,6 +268,10 @@
   font-family: var(font-jo);
   text-align: center;
 
+  @media only screen and (max-height: $bp-mobland) {
+    font-size: 1.3rem;
+  }
+
   @media only screen and (max-width: $bp-small) {
    font-size: 1.8rem;
   }
@@ -265,13 +281,24 @@
   max-width: 75%;
 
   @media only screen and (max-width: $bp-small) {
-    font-size: 1.1rem;
+    font-size: 1.15rem;
     max-width: 88%;
   }
+
+  @media only screen and (max-height: $bp-mobland) {
+    font-size: .95rem;
+    max-width: 90%;
+  }
+
 }
 
 .content-test-horiz-sub h1 {
   font-size: 1.5rem;
+
+  @media only screen and (max-height: $bp-mobland) {
+    font-size: 1.1rem;
+    font-weight: 400;
+   }
 }
 
 
@@ -295,6 +322,10 @@
     text-align: center;
     transform: translate(-50%, -50%);
     width: 80%;
+
+    @media only screen and (max-height: $bp-mobland) {
+      font-size: 2.2rem;
+     }
   }
 }
 
@@ -379,6 +410,12 @@ input:checked ~ .content-test {
   background-size: cover;
   background-repeat: no-repeat;
   margin: 0 0 3rem;
+
+  @media only screen and (max-height: $bp-mobland) {
+    height: 90px;
+    margin: 0 0 2rem;
+    width: 90px;
+   }
 }
 
 .content-test-horiz-sub .picto {
@@ -390,6 +427,13 @@ input:checked ~ .content-test {
 }
 
 .picto-sub {
+
+  @media only screen and (max-height: $bp-mobland) {
+    height: 90px;
+    margin: 0 0 2rem;
+    width: 90px;
+   }
+   
   @media only screen and (max-width: $bp-small) {
     height: 0;
     margin: 0;
@@ -524,6 +568,12 @@ label:before {
   @media only screen and (max-width: $bp-small) {
     visibility: hidden;
   }
+
+  @media only screen and (max-height: $bp-mobland) {
+    width: 30px;
+    height: 30px;
+    margin-left: 10px;
+   }
 }
 
 .label_testimonial-1:before {
@@ -542,6 +592,7 @@ label:before {
   @media only screen and (max-width: $bp-small) {
     visibility: hidden;
   }
+
 }
 
 .label_testimonial-3:before {
@@ -569,6 +620,7 @@ label:before {
   @media only screen and (max-width: $bp-small) {
     visibility: hidden;
   }
+
 }
 
 .label_testimonial-6:before {
