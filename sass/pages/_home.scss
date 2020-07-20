@@ -464,13 +464,12 @@
 
 
 .media-section {
-  margin: 10rem 8rem;
 
   &__container {
     align-items: center;
     display: flex;
-    justify-content: center;
-    margin: 4rem 0;
+    justify-content: space-evenly;
+    margin: 10rem 8rem;
 
     @media only screen and (max-width: $bp-medium) {
       align-items: center;
@@ -479,11 +478,17 @@
   }
 }
 
+.twitter-feed__container {
+  display: flex;
+  flex: 1 1 1;
+  margin: 1rem;
+}
+
+
 .twitter-feed {
   box-shadow: 0 5px 18px rgba(0, 0, 0, 0.6);
-  flex: 1 1 28vw;
-  justify-self: stretch;
-  margin: 0 1rem 0 0;
+  min-width: 200px;
+  max-width: 500px;
 
   @media only screen and (max-width: $bp-medium) {
     width: 600px;
@@ -504,15 +509,12 @@
 
 .shows-section {
   display: flex;
-  justify-content: center;
-  // height: 100%;
-  flex: 1;
-  margin: 0 0 0 1rem;
+  flex: 1 1 1;
+  margin: 2rem;
 
-  @media only screen and (max-width: $bp-medium) {
-    flex: 1;
-    margin: 0 0 6rem;
-  }
+  // @media only screen and (max-width: $bp-medium) {
+  //   flex: 1 1 65vw;
+  // }
 }
 
 // CONTACT SECTION 

@@ -1744,23 +1744,25 @@ label:first-letter {
         .details h2 .job-title {
           font-size: 1.15rem; } }
 
-.media-section {
+.media-section__container {
+  align-items: center;
+  display: flex;
+  justify-content: space-evenly;
   margin: 10rem 8rem; }
-  .media-section__container {
-    align-items: center;
-    display: flex;
-    justify-content: center;
-    margin: 4rem 0; }
-    @media only screen and (max-width: 56.25em) {
-      .media-section__container {
-        align-items: center;
-        flex-direction: column-reverse; } }
+  @media only screen and (max-width: 56.25em) {
+    .media-section__container {
+      align-items: center;
+      flex-direction: column-reverse; } }
+
+.twitter-feed__container {
+  display: flex;
+  flex: 1 1 1;
+  margin: 1rem; }
 
 .twitter-feed {
   box-shadow: 0 5px 18px rgba(0, 0, 0, 0.6);
-  flex: 1 1 28vw;
-  justify-self: stretch;
-  margin: 0 1rem 0 0; }
+  min-width: 200px;
+  max-width: 500px; }
   @media only screen and (max-width: 56.25em) {
     .twitter-feed {
       width: 600px; } }
@@ -1776,13 +1778,8 @@ label:first-letter {
 
 .shows-section {
   display: flex;
-  justify-content: center;
-  flex: 1;
-  margin: 0 0 0 1rem; }
-  @media only screen and (max-width: 56.25em) {
-    .shows-section {
-      flex: 1;
-      margin: 0 0 6rem; } }
+  flex: 1 1 1;
+  margin: 2rem; }
 
 .contact-section {
   padding: 8rem 2rem; }
