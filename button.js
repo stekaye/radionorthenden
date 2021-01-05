@@ -4,13 +4,25 @@
   var day = today.getDay();
   var daylist = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
   
-  if (daylist[day]!= "" && daylist[day] != "Sunday" && daylist[day] != "Saturday") {
+  if (daylist[day] == "Monday") {
     
     var hour = today.getHours();
     var minute = today.getMinutes();
     var second = today.getSeconds();
     
-    if (hour >= 15  && (hour <= 18))  {
+    if (hour >= 17  && (hour <= 20))  {
+      $("#buttonLive").show();
+    } else {
+      $("#buttonLive").hide();
+    }
+
+  } else if (daylist[day] == "Friday") {
+
+    var hour = today.getHours();
+    var minute = today.getMinutes();
+    var second = today.getSeconds();
+    
+    if (hour >= 13  && (hour <= 16))  {
       $("#buttonLive").show();
     } else {
       $("#buttonLive").hide();
@@ -22,7 +34,7 @@
     var minute = today.getMinutes();
     var second = today.getSeconds();
     
-    if (hour >= 7  && (hour <= 15))  {
+    if (hour >= 10  && (hour <= 15))  {
       $("#buttonLive").show();
     } else {
       $("#buttonLive").hide();
@@ -34,18 +46,15 @@
     var minute = today.getMinutes();
     var second = today.getSeconds();
     
-    if (hour >= 15  && (hour <= 18))  {
-      $("#buttonLive").show();
-    } else if (hour >= 21  && (hour <= 1))  {
+    if (hour >= 18  && (hour <= 21))  {
       $("#buttonLive").show();
     } else {
       $("#buttonLive").hide();
     }
 
+  } else {
+    $("#buttonLive").hide();
   }
-
-
-
 
 
 

@@ -48,6 +48,7 @@ a {
 
 .heading-primary {
   backface-visibility: hidden;
+  color: #374045;
   margin-bottom: 5rem;
   text-align: center;
   text-transform: uppercase; }
@@ -795,7 +796,7 @@ input:checked ~ .content-test {
 .content_testimonial-1 {
   background-color: var(--color-secondary); }
   .content_testimonial-1 .picto {
-    background-image: url("/img/sanny_transparent.png"); }
+    background-image: url("/img/logo.png"); }
 
 .content_testimonial-2 {
   background-color: var(--color-primary); }
@@ -805,23 +806,23 @@ input:checked ~ .content-test {
 .content_testimonial-3 {
   background-color: #ba6b57; }
   .content_testimonial-3 .picto {
-    background-image: url("/img/Katie.png"); }
+    background-image: url("/img/logo.png"); }
 
 .content_testimonial-4 {
   background-color: var(--color-orange); }
   .content_testimonial-4 .picto {
-    background-image: url("/img/Kev.png"); }
+    background-image: url("/img/logo.png"); }
 
 .content_testimonial-5 {
   background-color: #fecb89; }
   .content_testimonial-5 .picto {
-    background-color: var(--color-white-1);
-    background-image: url("/img/sanny_transp.png"); }
+    background-color: var(--color-primary);
+    background-image: url("/img/mick_transparent.png"); }
 
 .content_testimonial-6 {
   background-color: #4f8a8b; }
   .content_testimonial-6 .picto {
-    background-image: url("/img/indiebreakfast.jpg"); }
+    background-image: url("/img/logo.png"); }
   .content_testimonial-6 .picto-sub {
     background-image: url("/img/dan.jpg"); }
 
@@ -829,9 +830,7 @@ input:checked ~ .content-test {
   background-color: #c06c84; }
   .content_testimonial-7 .picto {
     background-color: #fecb89;
-    background-image: url("/img/alex_transp.png"); }
-  .content_testimonial-7 .picto-sub {
-    background-image: url("/img/stage.jpg"); }
+    background-image: url("/img/hayley-transparent.png"); }
 
 .content-test h1:first-letter {
   text-transform: uppercase; }
@@ -893,7 +892,7 @@ label:before {
 
 .label_testimonial-1:before {
   background-color: var(--color-secondary);
-  background-image: url("/img/sanny_transp2.png"); }
+  background-image: url("/img/heron-2.png"); }
   @media only screen and (max-width: 35em) {
     .label_testimonial-1:before {
       visibility: hidden; } }
@@ -907,21 +906,21 @@ label:before {
 
 .label_testimonial-3:before {
   background-color: #ba6b57;
-  background-image: url("/img/katie-transp.png"); }
+  background-image: url("/img/heron-2.png"); }
   @media only screen and (max-width: 35em) {
     .label_testimonial-3:before {
       visibility: hidden; } }
 
 .label_testimonial-4:before {
   background-color: var(--color-orange);
-  background-image: url("/img/kev_transp.png"); }
+  background-image: url("/img/heron-2.png"); }
   @media only screen and (max-width: 35em) {
     .label_testimonial-4:before {
       visibility: hidden; } }
 
 .label_testimonial-5:before {
   background-color: #fecb89;
-  background-image: url("/img/sanny_transp.png"); }
+  background-image: url("/img/mick_transparent.png"); }
   @media only screen and (max-width: 35em) {
     .label_testimonial-5:before {
       visibility: hidden; } }
@@ -935,7 +934,7 @@ label:before {
 
 label.label_testimonial-7:before {
   background-color: #c06c84;
-  background-image: url("/img/alex_transp.png"); }
+  background-image: url("/img/hayley-transparent.png"); }
   @media only screen and (max-width: 35em) {
     label.label_testimonial-7:before {
       visibility: hidden; } }
@@ -1009,7 +1008,7 @@ label:first-letter {
 
 /* ============== End Testimonial Flexbox ============= */
 .header {
-  background-image: linear-gradient(to right bottom, rgba(142, 198, 197, 0.7), rgba(105, 131, 170, 0.7)), url(../../img/photocomp3.jpg);
+  background-image: linear-gradient(to right bottom, rgba(142, 198, 197, 0.7), rgba(105, 131, 170, 0.7));
   background-position: center;
   background-size: cover;
   height: 92vh;
@@ -1255,6 +1254,36 @@ label:first-letter {
 
 .navigation__checkbox {
   display: none; }
+
+.navigation__logo {
+  background-image: url('/img/logo.png');
+  border-radius: 50%;
+  box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  height: 7rem;
+  position: absolute;
+  left: 6rem;
+  top: 6rem;
+  width: 7rem;
+  z-index: 2000; }
+  @media only screen and (max-width: 35em) {
+    .navigation__logo {
+      height: 5rem;
+      left: 4.5rem;
+      top: 4.5rem;
+      width: 5rem; } }
+  @media only screen and (max-width: 25em) {
+    .navigation__logo {
+      height: 4.2rem;
+      left: 3rem;
+      top: 3rem;
+      width: 4.2rem; } }
+  @media only screen and (max-height: 31.25em) {
+    .navigation__logo {
+      height: 3.5rem;
+      left: 2.5rem;
+      top: 2.5rem;
+      width: 3.5rem; } }
 
 .navigation__button {
   background-color: var(--color-white-2);
@@ -1555,12 +1584,19 @@ label:first-letter {
       width: 100%; }
     .card .card-image__katie {
       background-image: url(/img/katie_transparent.png); }
-    .card .card-image__kevin {
-      background-image: url(/img/kevin_transparent.png); }
+    .card .card-image__hayley {
+      background-image: url(/img/hayley-transparent.png);
+      left: 38%;
+      width: 80%;}
+      @media only screen and (max-width: 56.25em) {
+        .card .card-image__hayley {
+          height: 60%;
+          width: 200px; } }
     .card .card-image__emma {
-      background-image: url(/img/emma_transp.png);
-      height: 64%;
-      width: 320px; }
+      background-image: url(/img/emma2-transparent2.png);
+      background-position: top;
+      background-size: cover;
+      height: 70%}
       @media only screen and (max-width: 56.25em) {
         .card .card-image__emma {
           height: 50%;
@@ -1572,14 +1608,29 @@ label:first-letter {
       @media only screen and (max-width: 56.25em) {
         .card .card-image__dan {
           height: 70%; } }
-    .card .card-image__alex {
-      background-image: url(/img/alex_transp.png);
-      width: 80%; }
+    .card .card-image__claire {
+      background-image: url(/img/claire_transparent.png);}
+    .card .card-image__marie {
+      background-image: url(/img/marie_transparent.png);
+      background-position: top;
+      height: 70%;}
+      @media only screen and (max-width: 56.25em) {
+        .card .card-image__marie {
+          height: 60%; } }
+    .card .card-image__mick {
+      background-image: url(/img/mick_transparent.png);}
+      .card .card-image__charlie {
+        background-image: url(/img/charlie_transparent.png);
+        background-position: top;
+        height: 75%;
+      }
 
 .card:hover .card-image {
   opacity: 0.4;
   transform: translate(-10%, -50%);
   transition: all .9s; }
+  .card:hover .card-image__hayley {
+    transform: translate(-90%, -50%);}
   @media only screen and (max-width: 56.25em) {
     .card:hover .card-image {
       opacity: 0.7;
@@ -1623,20 +1674,26 @@ label:first-letter {
           transform: translateY(0px);
           width: 40px;
           height: 40px; } }
-  .social-icons__sanny li a {
+  .social-icons__sanny li a,
+  .social-icons__charlie li a {
     background: var(--color-secondary); }
     @media only screen and (max-width: 56.25em) {
-      .social-icons__sanny li a {
+      .social-icons__sanny li a, 
+      .social-icons__charlie li a {
         background: var(--color-orange); } }
-  .social-icons__katie li a {
+  .social-icons__katie li a,
+  .social-icons__marie li a  {
     background: var(--color-primary); }
     @media only screen and (max-width: 56.25em) {
-      .social-icons__katie li a {
+      .social-icons__katie li a,
+      .social-icons__marie li a  {
         background: var(--color-secondary); } }
-  .social-icons__kevin li a {
+  .social-icons__hayley li a,
+  .social-icons__mick li a {
     background: var(--color-orange); }
     @media only screen and (max-width: 56.25em) {
-      .social-icons__kevin li a {
+      .social-icons__hayley li a,
+      .social-icons__mick li a {
         background: var(--color-primary); } }
   .social-icons__emma li a {
     background: #c06c84; }
@@ -1648,10 +1705,10 @@ label:first-letter {
     @media only screen and (max-width: 56.25em) {
       .social-icons__dan li a {
         background: #c06c84; } }
-  .social-icons__alex li a {
+  .social-icons__claire li a {
     background: #fecb89; }
     @media only screen and (max-width: 56.25em) {
-      .social-icons__alex li a {
+      .social-icons__claire li a {
         background: #4f8a8b; } }
 
 .card:hover .social-icons li a {
@@ -1659,22 +1716,28 @@ label:first-letter {
   transform: translateY(0px);
   opacity: 1; }
 
-.social-icons__sanny li a:hover {
+.social-icons__sanny li a:hover,
+.social-icons__charlie li a:hover {
   background: #fecb89;
   transition: .1s; }
-  .social-icons__sanny li a:hover .fab {
+  .social-icons__sanny li a:hover .fab,
+  .social-icons__charlie li a:hover .fab {
     color: var(--color-grey-light-1); }
 
-.social-icons__katie li a:hover {
+.social-icons__katie li a:hover,
+.social-icons__marie li a:hover {
   background: var(--color-secondary);
   transition: .1s; }
-  .social-icons__katie li a:hover .fab {
+  .social-icons__katie li a:hover .fab,
+  .social-icons__marie li a:hover .fab {
     color: var(--color-grey-light-1); }
 
-.social-icons__kevin li a:hover {
+.social-icons__hayley li a:hover,
+.social-icons__mick li a:hover {
   background: var(--color-primary);
   transition: .1s; }
-  .social-icons__kevin li a:hover .fab {
+  .social-icons__hayley li a:hover .fab,
+  .social-icons__mick li a:hover .fab {
     color: var(--color-grey-light-1); }
 
 .social-icons__emma li a:hover {
@@ -1689,10 +1752,10 @@ label:first-letter {
   .social-icons__dan li a:hover .fab {
     color: var(--color-grey-light-1); }
 
-.social-icons__alex li a:hover {
+.social-icons__claire li a:hover {
   background: #4f8a8b;
   transition: .1s; }
-  .social-icons__alex li a:hover .fab {
+  .social-icons__claire li a:hover .fab {
     color: var(--color-grey-light-1); }
 
 .social-icons li a .fab {
@@ -1710,21 +1773,25 @@ label:first-letter {
   height: 120px;
   z-index: 1;
   padding: 10px; }
+  .details span {
+    display: block;
+    padding: 0.4rem 0;
+  }
   @media only screen and (max-width: 56.25em) {
     .details {
       height: 240px;
       top: 55%; } }
-  .details__sanny {
+  .details__sanny, .details__charlie {
     background: var(--color-secondary); }
-  .details__katie {
+  .details__katie,  .details__marie {
     background: var(--color-primary); }
-  .details__kevin {
+  .details__hayley, .details__mick {
     background: var(--color-orange); }
   .details__emma {
     background: #c06c84; }
   .details__dan {
     background: #4f8a8b; }
-  .details__alex {
+  .details__claire {
     background: #fecb89; }
   .details h2 {
     font-size: 1.8rem;
