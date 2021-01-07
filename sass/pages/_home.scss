@@ -4,6 +4,7 @@
   // background-image: linear-gradient(to right bottom, 
   //   rgba(#6983aa, 0.8), 
   //   rgba(#015668, 0.8));
+  display: flex;
   padding: 2rem;
 
   @media only screen and (max-width: $bp-small) {
@@ -78,6 +79,18 @@
       @media only screen and (max-width: $bp-medium) {
         text-align: center;
       }
+    }
+  }
+
+  &__logo {
+    height: 30rem;
+    margin: 0 auto 6rem;
+    width: 30rem;
+
+    @media only screen and (max-width: $bp-small) {
+      height: 26rem;
+      margin: -1rem auto 2rem;
+      width: 26rem;
     }
   }
 }

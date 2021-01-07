@@ -816,22 +816,22 @@ input:checked ~ .content-test {
 .content_testimonial-1 {
   background-color: var(--color-secondary); }
   .content_testimonial-1 .picto {
-    background-image: url("/img/logo.png"); }
+    background-image: url("/img/logo-transparent.png"); }
 
 .content_testimonial-2 {
   background-color: var(--color-primary); }
   .content_testimonial-2 .picto {
-    background-image: url("/img/yoga.jpg"); }
+    background-image: url("/img/logo-transparent.png"); }
 
 .content_testimonial-3 {
   background-color: #ba6b57; }
   .content_testimonial-3 .picto {
-    background-image: url("/img/logo.png"); }
+    background-image: url("/img/logo-transparent.png"); }
 
 .content_testimonial-4 {
   background-color: var(--color-orange); }
   .content_testimonial-4 .picto {
-    background-image: url("/img/logo.png"); }
+    background-image: url("/img/logo-transparent.png"); }
 
 .content_testimonial-5 {
   background-color: #fecb89; }
@@ -919,7 +919,7 @@ label:before {
 
 .label_testimonial-2:before {
   background-color: var(--color-primary);
-  background-image: url("/img/emma_transp2.png"); }
+  background-image: url("/img/heron-2.png"); }
   @media only screen and (max-width: 35em) {
     .label_testimonial-2:before {
       visibility: hidden; } }
@@ -1481,6 +1481,7 @@ label:first-letter {
   transform: rotate(-135deg); }
 
 .about-section {
+  display: flex;
   padding: 2rem; }
   @media only screen and (max-width: 35em) {
     .about-section {
@@ -1539,6 +1540,15 @@ label:first-letter {
       @media only screen and (max-width: 56.25em) {
         .about-section__text-box--heading {
           text-align: center; } }
+  .about-section__logo {
+    height: 30rem;
+    margin: 0 auto 6rem;
+    width: 30rem;}
+    @media only screen and (max-width: 35em) {
+      .about-section__logo {
+        height: 26rem;
+        margin: -1rem auto 2rem;
+        width: 26rem;} }
 
 .presenter-section__container {
   max-width: 90vw;
@@ -1642,17 +1652,21 @@ label:first-letter {
           height: 60%; } }
     .card .card-image__mick {
       background-image: url(/img/mick_transparent.png);}
-      .card .card-image__charlie {
-        background-image: url(/img/charlie_transparent.png);
-        background-position: top;
-        height: 75%;
-      }
+    .card .card-image__charlie {
+      background-image: url(/img/charlie_transparent.png);
+      background-position: top;
+      height: 75%;}
+    .card .card-image__melanie {
+      background-image: url(/img/silhouette-woman.png);}
+    .card .card-image__kevin {
+      background-image: url(/img/kev_transp.png);}
 
 .card:hover .card-image {
   opacity: 0.4;
   transform: translate(-10%, -50%);
   transition: all .9s; }
-  .card:hover .card-image__hayley {
+  .card:hover .card-image__hayley,
+  .card:hover .card-image__kevin {
     transform: translate(-90%, -50%);}
   @media only screen and (max-width: 56.25em) {
     .card:hover .card-image {
@@ -1718,15 +1732,19 @@ label:first-letter {
       .social-icons__hayley li a,
       .social-icons__mick li a {
         background: var(--color-primary); } }
-  .social-icons__emma li a {
+  .social-icons__emma li a,
+  .social-icons__melanie li a {
     background: #c06c84; }
     @media only screen and (max-width: 56.25em) {
-      .social-icons__emma li a {
+      .social-icons__emma li a,
+      .social-icons__melanie li a {
         background: #fecb89; } }
-  .social-icons__dan li a {
+  .social-icons__dan li a,
+  .social-icons__kevin li a{
     background: #4f8a8b; }
     @media only screen and (max-width: 56.25em) {
-      .social-icons__dan li a {
+      .social-icons__dan li a,
+      .social-icons__kevin li a {
         background: #c06c84; } }
   .social-icons__claire li a {
     background: #fecb89; }
@@ -1763,16 +1781,20 @@ label:first-letter {
   .social-icons__mick li a:hover .fab {
     color: var(--color-grey-light-1); }
 
-.social-icons__emma li a:hover {
+.social-icons__emma li a:hover,
+.social-icons__melanie li a:hover {
   background: var(--color-orange);
   transition: .1s; }
-  .social-icons__emma li a:hover .fab {
+  .social-icons__emma li a:hover .fab,
+  .social-icons__melanie li a:hover .fab {
     color: var(--color-grey-light-1); }
 
-.social-icons__dan li a:hover {
+.social-icons__dan li a:hover,
+.social-icons__kevin li a:hover  {
   background: #c06c84;
   transition: .1s; }
-  .social-icons__dan li a:hover .fab {
+  .social-icons__dan li a:hover .fab,
+  .social-icons__kevin li a:hover .fab {
     color: var(--color-grey-light-1); }
 
 .social-icons__claire li a:hover {
@@ -1810,9 +1832,9 @@ label:first-letter {
     background: var(--color-primary); }
   .details__hayley, .details__mick {
     background: var(--color-orange); }
-  .details__emma {
+  .details__emma, .details__melanie {
     background: #c06c84; }
-  .details__dan {
+  .details__dan, .details__kevin {
     background: #4f8a8b; }
   .details__claire {
     background: #fecb89; }
