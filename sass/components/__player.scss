@@ -17,18 +17,28 @@
     margin: 4rem 2rem;
     padding: 1rem;
     width: 70vw;
+
+    @media only screen and (max-width: 35em) {
+      margin: 4rem 0.5rem 0;
+      padding: 0.5rem;
+      width: 90vw; 
+    }
   }
 
   &--link {
     color: var(--color-secondary);
-    cursor: url("../../img/music.png"), auto;
+    cursor: pointer;
     display: block;
+    font-family: var(--font-jo);
     font-size: 3rem;
+    font-weight: bold;
     text-align: center;
     text-decoration: none;
+    text-transform: uppercase;
   }
 
 }
+
 
 
 

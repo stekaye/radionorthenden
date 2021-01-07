@@ -27,7 +27,8 @@
 
 html {
   box-sizing: border-box;
-  font-size: 62.5%; }
+  font-size: 62.5%;
+  scroll-behavior: smooth; }
 
 body {
   background-color: var(--color-white-2);
@@ -36,7 +37,7 @@ body {
   font-weight: 400;
   line-height: 1.6;
   padding: 30px; }
-  @media only screen and (max-width: 25em) {
+  @media only screen and (max-width: 35em) {
     body {
       padding: 0; } }
   @media only screen and (max-height: 31.25em) {
@@ -56,14 +57,14 @@ a {
     animation: moveInLeft 1s ease-out;
     display: block;
     font-family: var(--font-mo);
-    font-size: 6rem;
+    font-size: 3.9vw;
     font-weight: 700;
     letter-spacing: 2rem;
     margin: 0 5rem 2rem;
     position: relative; }
     @media only screen and (max-width: 56.25em) {
       .heading-primary--main {
-        font-size: 4.6rem;
+        font-size: 6vw;
         letter-spacing: 1.4rem; } }
     @media only screen and (max-width: 35em) {
       .heading-primary--main {
@@ -72,7 +73,7 @@ a {
         margin: 0 3rem 2rem; } }
     @media only screen and (max-width: 25em) {
       .heading-primary--main {
-        font-size: 3rem;
+        font-size: 2.7rem;
         letter-spacing: .4rem;
         margin: 0 1rem 1rem; } }
     @media only screen and (max-height: 31.25em) {
@@ -84,8 +85,8 @@ a {
     animation: moveInRight 1s ease-out;
     display: block;
     font-family: var(--font-mo);
-    font-size: 1.7rem;
-    font-weight: 600;
+    font-size: 2vw;
+    font-weight: 400;
     letter-spacing: 0.5rem;
     line-height: 2; }
     @media only screen and (max-width: 35em) {
@@ -95,9 +96,10 @@ a {
         margin: 0 2rem; } }
     @media only screen and (max-width: 25em) {
       .heading-primary--sub {
-        font-size: 1.1rem;
+        font-size: 1.3rem;
         letter-spacing: .2rem;
-        margin: 0 4rem; } }
+        line-height: 1.5;
+        margin: 2.5rem 4rem 0; } }
     @media only screen and (max-height: 31.25em) {
       .heading-primary--sub {
         font-size: 1.4rem;
@@ -216,10 +218,10 @@ a {
   text-decoration: none;
   text-transform: uppercase;
   transition: all .2s; }
-  @media only screen and (max-width: 56.25em) {
+  /* @media only screen and (max-width: 56.25em) {
     .btn, .btn:link, .btn:visited {
       margin: 2rem 1rem;
-      padding: 1rem 2rem; } }
+      padding: 1rem 2rem; } } */
   @media only screen and (max-width: 35em) {
     .btn, .btn:link, .btn:visited {
       margin: .5rem .5rem 1rem;
@@ -254,10 +256,10 @@ a {
   z-index: -1; }
 
 .btn--orange {
-  background-color: var(--color-orange);
+  background-color: #374045 ;
   color: var(--color-white-2); }
   .btn--orange::after {
-    background-color: var(--color-orange); }
+    background-color: #374045 ; }
 
 .btn--bright {
   background-color: var(--color-orange-bright);
@@ -285,6 +287,9 @@ a {
   height: 40rem;
   padding: 3rem 0;
   position: relative; }
+  @media only screen and (max-width: 35em) {
+    .listen-live__section {
+      height: 35vh;} }
   .listen-live__section--wrapper {
     left: 50%;
     position: absolute;
@@ -295,14 +300,29 @@ a {
     height: 18rem;
     margin: 4rem 2rem;
     padding: 1rem;
-    width: 70vw; }
+    width: 60vw; }
+    @media only screen and (max-width: 35em) {
+      .listen-live__section--player {
+        margin: 4rem 0.5rem;
+        padding: 0.5rem;
+        width: 90vw; } }
   .listen-live__section--link {
     color: var(--color-secondary);
-    cursor: url("../../img/music.png"), auto;
+    cursor: pointer;
     display: block;
+    font-family: var(--font-jo);
     font-size: 3rem;
+    font-weight: bold;
     text-align: center;
-    text-decoration: none; }
+    text-decoration: none;
+    text-transform: uppercase; }
+    @media only screen and (max-width: 35em) {
+      .listen-live__section--link {
+        display: none } }
+  
+  #mixlr_player .player__info.user__icon {
+    display: none;
+  }
 
 /* CONTACT FORM STYLES */
 .contact-section {
@@ -645,7 +665,7 @@ a {
 .content-test p {
   color: var(--color-grey-light-3);
   font-family: var(--font-mo);
-  font-size: 1.25rem;
+  font-size: 1.15rem;
   line-height: 1.6;
   padding: 1rem 0;
   max-width: 60%;
@@ -1013,10 +1033,10 @@ label:first-letter {
   background-size: cover;
   height: 92vh;
   position: relative; }
-  @media only screen and (max-width: 25em) {
+  @media only screen and (max-width: 35em) {
     .header {
-      height: 95vh;
-      margin: 12px; } }
+      height: 60vh;
+      margin: 20px; } }
   .header__text-box {
     left: 50%;
     position: absolute;
@@ -1034,7 +1054,7 @@ label:first-letter {
     left: 50%;
     padding: 0 3rem;
     position: absolute;
-    top: 120%;
+    top: 130%;
     transform: translate(-50%, -50%);
     width: 100%; }
     @media only screen and (max-width: 56.25em) {
@@ -1043,10 +1063,10 @@ label:first-letter {
     @media only screen and (max-width: 35em) {
       .header__buttons {
         margin-top: 2rem;
-        top: 100%; } }
+        top: 115%; } }
     @media only screen and (max-width: 25em) {
       .header__buttons {
-        top: 90%; } }
+        top: 105%; } }
     @media only screen and (max-height: 31.25em) {
       .header__buttons {
         top: 95%; } }
@@ -1059,7 +1079,10 @@ label:first-letter {
   .header__logo-home {
     position: relative; }
   .header__logo {
-    height: 6rem; }
+    height: 4vw; }
+    @media only screen and (max-width: 56.25) {
+      .header__logo {
+        height: 6rem; } }
     @media only screen and (max-width: 35em) {
       .header__logo {
         height: 3.5rem; } }
@@ -1071,13 +1094,13 @@ label:first-letter {
         height: 4rem; } }
   .header__social-icons {
     position: absolute;
-    top: 164%;
+    top: 170%;
     left: 50%;
     transform: translate(-50%, -50%);
     display: flex; }
-    @media only screen and (max-width: 68.75em) {
+    /* @media only screen and (max-width: 68.75em) {
       .header__social-icons {
-        top: 150%; } }
+        top: 200%; } } */
     @media only screen and (max-width: 56.25em) {
       .header__social-icons {
         top: 160%; } }
@@ -1086,14 +1109,14 @@ label:first-letter {
         top: 150%; } }
     @media only screen and (max-width: 25em) {
       .header__social-icons {
-        top: 140%; } }
+        top: 135%; } }
     @media only screen and (max-height: 31.25em) {
       .header__social-icons {
         top: 145%; } }
     .header__social-icons li {
       list-style: none; }
       .header__social-icons li a {
-        background-color: var(--color-orange);
+        background-color: #374045 ;
         border-radius: 50%;
         position: relative;
         display: block;
@@ -1128,7 +1151,6 @@ label:first-letter {
             opacity: 1;
             width: 35px; } }
         .header__social-icons li a:hover {
-          background-color: var(--color-orange-bright);
           opacity: 1; }
         .header__social-icons li a .fab {
           transition: .8s; }
@@ -1177,7 +1199,8 @@ label:first-letter {
       height: 4rem; }
       @media only screen and (max-width: 35em) {
         .footer__supporter-logo a img {
-          height: 3rem; } }
+          height: 2rem;
+          margin: 2rem 0.5rem; } }
   .footer__buttons {
     left: 50%;
     margin: 2rem 0;
@@ -1458,7 +1481,7 @@ label:first-letter {
   transform: rotate(-135deg); }
 
 .about-section {
-  padding: 8rem 2rem; }
+  padding: 2rem; }
   @media only screen and (max-width: 35em) {
     .about-section {
       padding: 5rem 2rem; } }
@@ -1555,7 +1578,7 @@ label:first-letter {
   border-radius: 16px;
   overflow: hidden;
   box-shadow: 0 5px 18px rgba(0, 0, 0, 0.6);
-  cursor: pointer;
+  /* cursor: pointer; */
   transition: 0.5s; }
   @media only screen and (max-width: 56.25em) {
     .card {

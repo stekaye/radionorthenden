@@ -4,7 +4,7 @@
   // background-image: linear-gradient(to right bottom, 
   //   rgba(#6983aa, 0.8), 
   //   rgba(#015668, 0.8));
-  padding: 8rem 2rem;
+  padding: 2rem;
 
   @media only screen and (max-width: $bp-small) {
     padding: 5rem 2rem;
@@ -128,7 +128,7 @@
   border-radius: 16px;
   overflow: hidden;
   box-shadow: 0 5px 18px rgba(0, 0, 0, 0.6);
-  cursor: pointer;
+  // cursor: none;
   transition: 0.5s;
 
   @media only screen and (max-width: $bp-medium) {
@@ -212,6 +212,7 @@
 /**** Social Icons *****/
 
 .social-icons {
+  cursor: pointer;
   position: absolute;
   top: 60%;
   left: 50%;
