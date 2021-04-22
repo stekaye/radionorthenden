@@ -1070,6 +1070,9 @@ label:first-letter {
     @media only screen and (max-height: 31.25em) {
       .header__buttons {
         top: 95%; } }
+    .header__buttons .btn {
+      margin-bottom: 1rem;
+    }
   .header__logo-box {
     left: 37%;
     position: absolute;
